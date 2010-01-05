@@ -1,0 +1,3 @@
+(table procedure_map
+  (t-row (item "OpenAL C API") (item "Ada equivalent"))
+)

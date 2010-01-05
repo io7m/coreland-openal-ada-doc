@@ -1,0 +1,36 @@
+(section
+  (title "Orientation")
+
+  (subsection
+    (title "Overview")
+
+    (para "This package provides a set of Ada bindings to the "
+      (link-ext "http://openal.org" "OpenAL") " API."))
+
+  (subsection
+    (title "Design")
+
+    (para "The package splits the " (item package "OpenAL") " API
+      into several Ada packages, providing strongly typed versions
+      of of the original C functions. The strongly typed versions
+      use enumeration types and floating point subtypes to prevent
+      the passing of invalid parameters to the API.")
+
+    (para "The package also provides direct access to the original "
+      (item package "OpenAL") " functions via the "
+      (link "openal_thin" "OpenAL.Thin") " package. This package is
+      generated directly from the OpenAL specifications, for
+      correctness."))
+
+  (subsection
+    (title "Documentation")
+
+    (para "This documentation should be considered supplementary
+      to the " (link-ext "http://www.openal.org/documentation/"
+      "OpenAL documentation and specifications") ". The user is
+      expected to have knowledge of the " (item package "OpenAL") " API.
+      This documentation makes no attempt to describe the original API
+      and only documents the new Ada subprograms and their relation to
+      the original C functions."))
+
+) ; end of section
