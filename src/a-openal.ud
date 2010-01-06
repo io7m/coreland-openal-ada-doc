@@ -11,6 +11,7 @@
 
   (include "a-openal-buffer.ud")
   (include "a-openal-context.ud")
+  (include "a-openal-context-capture.ud")
   (include "a-openal-context-error.ud")
   (include "a-openal-error.ud")
   (include "a-openal-listener.ud")
