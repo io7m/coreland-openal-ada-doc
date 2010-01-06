@@ -60,10 +60,10 @@ procedure Get_Velocity_iv
     (title "Description")
     (para
       "The " (item ada_procedure "Get_Velocity") " procedures
-      retrieve the velocity of the source.")
+      retrieve the velocity of the specified " (item parameter "Source") ".")
     (para
       "The " (item ada_procedure "Set_Velocity") " procedures
-      set the velocity of the source."))
+      set the velocity of the specified " (item parameter "Source") "."))
   (subsection
     (title "Mapping")
     (para

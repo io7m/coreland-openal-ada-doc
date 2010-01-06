@@ -60,10 +60,10 @@ procedure Get_Position_iv
     (title "Description")
     (para
       "The " (item ada_procedure "Get_Position") " procedures
-      retrieve the position of the source.")
+      retrieve the position of the specified " (item parameter "Source") ".")
     (para
       "The " (item ada_procedure "Set_Position") " procedures
-      set the position of the source."))
+      set the position of the specified " (item parameter "Source") "."))
   (subsection
     (title "Mapping")
     (para
