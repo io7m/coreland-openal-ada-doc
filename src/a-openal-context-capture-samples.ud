@@ -40,4 +40,4 @@ procedure Samples_Stereo_16
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Samples") " subprograms are equivalent
-      to " (item c_procedure "alcCaptureSamples") ".")))
+      to " (item c_function "alcCaptureSamples") ".")))

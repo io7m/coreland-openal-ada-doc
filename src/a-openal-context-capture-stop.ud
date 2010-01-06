@@ -18,4 +18,4 @@ procedure Stop (Device : in OpenAL.Context.Device_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Stop") " subprogram is equivalent
-      to " (item c_procedure "alcCaptureStop") ".")))
+      to " (item c_function "alcCaptureStop") ".")))

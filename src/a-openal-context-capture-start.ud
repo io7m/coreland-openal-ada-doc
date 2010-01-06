@@ -18,4 +18,4 @@ procedure Start (Device : in OpenAL.Context.Device_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Start") " subprogram is equivalent
-      to " (item c_procedure "alcCaptureStart") ".")))
+      to " (item c_function "alcCaptureStart") ".")))
