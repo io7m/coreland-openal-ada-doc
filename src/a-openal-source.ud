@@ -1,11 +1,12 @@
 (section
   (title "OpenAL.Source")
   (ref "openal_source")
-  (contents)
 
   (para "The " (item ada_package "OpenAL.Buffer") " package provides
     subprograms for manipulating audio sources (the objects within
     the simulation that emit sound).")
+
+  (contents)
 
   (include "a-openal-source-generate_sources.ud")
   (include "a-openal-source-delete_sources.ud")

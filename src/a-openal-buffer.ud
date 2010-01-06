@@ -1,10 +1,11 @@
 (section
   (title "OpenAL.Buffer")
   (ref "openal_buffer")
-  (contents)
 
   (para "The " (item ada_package "OpenAL.Buffer") " package provides
     subprograms for manipulating audio buffers.")
+
+  (contents)
 
   (include "a-openal-buffer-generate_buffers.ud")
   (include "a-openal-buffer-delete_buffers.ud")
