@@ -9,11 +9,11 @@
 "with OpenAL.Source;
 
 procedure Set_Cone_Outer_Gain
-  (Source : in Source_ID_t;
+  (Source : in Source_t;
    Gain   : in Types.Float_t);
 
 procedure Get_Cone_Outer_Gain
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    Gain   :    out Types.Float_t);
 "))
   (subsection

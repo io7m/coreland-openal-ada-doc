@@ -10,7 +10,7 @@
 type Source_Type_t is (Undetermined, Static, Streaming);
 
 procedure Get_Type
-  (Source      : in     Source_ID_t;
+  (Source      : in     Source_t;
    Source_Type :    out Source_Type_t);
 "))
   (subsection

@@ -10,7 +10,7 @@
 type Sample_Frequency_t is range 8 .. 16;
 
 procedure Get_Frequency
-  (Buffer    : in     Buffer_ID_t;
+  (Buffer    : in     Buffer_t;
    Frequency :    out Sample_Frequency_t);
 "))
   (subsection

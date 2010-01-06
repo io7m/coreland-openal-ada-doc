@@ -12,12 +12,12 @@ subtype Pitch_t is Types.Float_t range 0.00001 .. Types.Float_t'Last;
 
 -- proc_map : alSource
 procedure Set_Pitch
-  (Source : in Source_ID_t;
+  (Source : in Source_t;
    Pitch  : in Pitch_t);
 
 -- proc_map : alGetSource
 procedure Get_Pitch
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    Pitch  :    out Pitch_t);
 "))
   (subsection

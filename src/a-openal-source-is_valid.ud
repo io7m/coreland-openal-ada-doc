@@ -7,7 +7,7 @@
     (para-verbatim function_synopsis
 "with OpenAL.Source;
 
-function Is_Valid (Source : in Source_ID_t) return Boolean;
+function Is_Valid (Source : in Source_t) return Boolean;
 "))
   (subsection
     (title "Description")

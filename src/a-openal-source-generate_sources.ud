@@ -7,7 +7,7 @@
     (para-verbatim procedure_synopsis
 "with OpenAL.Source;
 
-type Source_ID_t is private;
+type Source_t is private;
 
 procedure Generate_Sources (Sources : in out Source_Array_t);
 "))

@@ -8,7 +8,7 @@
     (para-verbatim procedure_synopsis
 "with OpenAL.Source;
 
-procedure Rewind (Source : in Source_ID_t);
+procedure Rewind (Source : in Source_t);
 
 procedure Rewind_List (Sources : in Source_Array_t);
 "))

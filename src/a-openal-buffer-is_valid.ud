@@ -7,7 +7,7 @@
     (para-verbatim function_synopsis
 "with OpenAL.Buffer;
 
-function Is_Valid (Buffer : in Buffer_ID_t) return Boolean;
+function Is_Valid (Buffer : in Buffer_t) return Boolean;
 "))
   (subsection
     (title "Description")

@@ -7,7 +7,7 @@
     (para-verbatim procedure_synopsis
 "with OpenAL.Buffer;
 
-type Buffer_ID_t is private;
+type Buffer_t is private;
 
 procedure Generate_Buffers (Buffers : in out Buffer_Array_t);
 "))

@@ -10,12 +10,12 @@
 with OpenAL.Buffer;
 
 procedure Set_Current_Buffer
-  (Source : in Source_ID_t;
-   Buffer : in OpenAL.Buffer.Buffer_ID_t);
+  (Source : in Source_t;
+   Buffer : in OpenAL.Buffer.Buffer_t);
 
 procedure Get_Current_Buffer
-  (Source : in     Source_ID_t;
-   Buffer :    out OpenAL.Buffer.Buffer_ID_t);
+  (Source : in     Source_t;
+   Buffer :    out OpenAL.Buffer.Buffer_t);
 "))
   (subsection
     (title "Description")

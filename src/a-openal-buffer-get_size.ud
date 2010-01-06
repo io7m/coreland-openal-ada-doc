@@ -10,7 +10,7 @@
 type Sample_Size_t is range 1 .. Thin.Size_t'Last;
 
 procedure Get_Size
-  (Buffer : in     Buffer_ID_t;
+  (Buffer : in     Buffer_t;
    Size   :    out Sample_Size_t);
 "))
   (subsection

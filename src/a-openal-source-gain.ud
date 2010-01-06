@@ -15,27 +15,27 @@
 subtype Gain_t is Types.Float_t range 0.0 .. 1.0;
 
 procedure Set_Gain
-  (Source : in Source_ID_t;
+  (Source : in Source_t;
    Gain   : in Types.Float_t);
 
 procedure Get_Gain
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    Gain   :    out Types.Float_t);
 
 procedure Set_Minimum_Gain
-  (Source : in Source_ID_t;
+  (Source : in Source_t;
    Gain   : in Gain_t);
 
 procedure Get_Minimum_Gain
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    Gain   :    out Gain_t);
 
 procedure Set_Maximum_Gain
-  (Source : in Source_ID_t;
+  (Source : in Source_t;
    Gain   : in Gain_t);
 
 procedure Get_Maximum_Gain
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    Gain   :    out Gain_t);
 "))
   (subsection

@@ -17,43 +17,43 @@
 with OpenAL.Types;
 
 procedure Set_Direction_Float
-  (Source    : in Source_ID_t;
+  (Source    : in Source_t;
    X         : in Types.Float_t;
    Y         : in Types.Float_t;
    Z         : in Types.Float_t);
 
 procedure Set_Direction_Discrete
-  (Source    : in Source_ID_t;
+  (Source    : in Source_t;
    X         : in Types.Integer_t;
    Y         : in Types.Integer_t;
    Z         : in Types.Integer_t);
 
 procedure Set_Direction_Float_List
-  (Source    : in Source_ID_t;
+  (Source    : in Source_t;
    Direction : in Types.Vector_3f_t);
 
 procedure Set_Direction_Discrete_List
-  (Source    : in Source_ID_t;
+  (Source    : in Source_t;
    Direction : in Types.Vector_3i_t);
 
 procedure Get_Direction_Float
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    X      :    out Types.Float_t;
    Y      :    out Types.Float_t;
    Z      :    out Types.Float_t);
 
 procedure Get_Direction_Discrete
-  (Source : in     Source_ID_t;
+  (Source : in     Source_t;
    X      :    out Types.Integer_t;
    Y      :    out Types.Integer_t;
    Z      :    out Types.Integer_t);
 
 procedure Get_Direction_Float_List
-  (Source    : in     Source_ID_t;
+  (Source    : in     Source_t;
    Direction :    out Types.Vector_3f_t);
 
 procedure Get_Direction_Discrete_List
-  (Source    : in     Source_ID_t;
+  (Source    : in     Source_t;
    Direction :    out Types.Vector_3i_t);
 "))
   (subsection

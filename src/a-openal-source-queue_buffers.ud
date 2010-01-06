@@ -10,11 +10,11 @@
 with OpenAL.Buffer;
 
 procedure Queue_Buffers
-  (Source  : in Source_ID_t;
+  (Source  : in Source_t;
    Buffers : in OpenAL.Buffer.Buffer_Array_t);
 
 procedure Unqueue_Buffers
-  (Source  : in Source_ID_t;
+  (Source  : in Source_t;
    Buffers : in OpenAL.Buffer.Buffer_Array_t);
 "))
   (subsection

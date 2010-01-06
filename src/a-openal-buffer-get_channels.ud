@@ -10,7 +10,7 @@
 type Sample_Channels_t is range 1 .. 2;
 
 procedure Get_Channels
-  (Buffer   : in     Buffer_ID_t;
+  (Buffer   : in     Buffer_t;
    Channels :    out Sample_Channels_t);
 "))
   (subsection

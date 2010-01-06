@@ -9,11 +9,11 @@
 "with OpenAL.Source;
 
 procedure Set_Positioning
-  (Source   : in Source_ID_t;
+  (Source   : in Source_t;
    Relative : in Boolean);
 
 procedure Get_Positioning
-  (Source   : in     Source_ID_t;
+  (Source   : in     Source_t;
    Relative :    out Boolean);
 "))
   (subsection

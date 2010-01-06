@@ -26,22 +26,22 @@ type Sample_Array_16_t is array (Natural range <>) of aliased Sample_16_t;
 type Sample_Array_8_t is array (Natural range <>) of aliased Sample_8_t;
 
 procedure Set_Data_Mono_8
-  (Buffer    : in Buffer_ID_t;
+  (Buffer    : in Buffer_t;
    Data      : in Sample_Array_8_t;
    Frequency : in Frequency_t);
 
 procedure Set_Data_Stereo_8
-  (Buffer    : in Buffer_ID_t;
+  (Buffer    : in Buffer_t;
    Data      : in Sample_Array_8_t;
    Frequency : in Frequency_t);
 
 procedure Set_Data_Mono_16
-  (Buffer    : in Buffer_ID_t;
+  (Buffer    : in Buffer_t;
    Data      : in Sample_Array_16_t;
    Frequency : in Frequency_t);
 
 procedure Set_Data_Stereo_16
-  (Buffer    : in Buffer_ID_t;
+  (Buffer    : in Buffer_t;
    Data      : in Sample_Array_16_t;
    Frequency : in Frequency_t);
 "))

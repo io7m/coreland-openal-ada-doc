@@ -13,19 +13,19 @@
 with OpenAL.Types;
 
 procedure Set_Rolloff_Factor_Float
-  (Source   : in Source_ID_t;
+  (Source   : in Source_t;
    Distance : in Types.Float_t);
 
 procedure Set_Rolloff_Factor_Discrete
-  (Source   : in Source_ID_t;
+  (Source   : in Source_t;
    Distance : in Types.Integer_t);
 
 procedure Get_Rolloff_Factor_Float
-  (Source   : in     Source_ID_t;
+  (Source   : in     Source_t;
    Distance :    out Types.Float_t);
 
 procedure Get_Rolloff_Factor_Discrete
-  (Source   : in     Source_ID_t;
+  (Source   : in     Source_t;
    Distance :    out Types.Integer_t);
 "))
   (subsection

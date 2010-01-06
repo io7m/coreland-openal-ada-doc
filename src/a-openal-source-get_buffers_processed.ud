@@ -8,7 +8,7 @@
 "with OpenAL.Source;
 
 procedure Get_Buffers_Processed
-  (Source  : in     Source_ID_t;
+  (Source  : in     Source_t;
    Buffers :    out Natural);
 "))
   (subsection
