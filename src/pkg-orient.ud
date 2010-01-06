@@ -26,7 +26,7 @@
     (title "Documentation")
 
     (para "This documentation should be considered supplementary
-      to the " (link-ext "http://www.openal.org/documentation/"
+      to the " (link-ext "http://connect.creativelabs.com/openal/default.aspx"
       "OpenAL documentation and specifications") ". The user is
       expected to have knowledge of the " (item package "OpenAL") " API.
       This documentation makes no attempt to describe the original API
