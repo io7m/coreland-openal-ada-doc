@@ -1,0 +1,32 @@
+(section
+  (ref "openal_source_stop")
+  (ref "openal_source_stop_list")
+  (title "OpenAL.Source.Stop")
+  (para procedure_desc "Stop source(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+procedure Stop (Source : in Source_ID_t);
+
+procedure Stop_List (Sources : in Source_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Stop") " procedure sets the
+      source specified by " (item parameter "Source") " to the
+      stopped state.")
+    (para
+      "The " (item ada_procedure "Stop_List") " procedure sets all of
+      the sources specified by " (item parameter "Sources") " to the
+      stopped state."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Stop") " subprogram is
+      equivalent to " (item c_function "alSourceStop") ".")
+    (para
+      "The " (item ada_subprogram "Stop_List") " subprogram is
+      equivalent to " (item c_function "alSourceStopv") ".")))

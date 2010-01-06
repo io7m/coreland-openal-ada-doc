@@ -1,0 +1,38 @@
+(section
+  (ref "openal_source_queue_buffers")
+  (ref "openal_source_unqueue_buffers")
+  (title "OpenAL.Source.Current_Buffer")
+  (para procedure_desc "Queue/unqueue buffers for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+with OpenAL.Buffer;
+
+procedure Queue_Buffers
+  (Source  : in Source_ID_t;
+   Buffers : in OpenAL.Buffer.Buffer_Array_t);
+
+procedure Unqueue_Buffers
+  (Source  : in Source_ID_t;
+   Buffers : in OpenAL.Buffer.Buffer_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Queue_Buffers") " procedure
+      queues all buffers specified by " (item parameter "Buffers") ",
+      in the same order that they appear in the array, in the source
+      specified by " (item parameter "Source") ".")
+    (para
+      "The " (item ada_procedure "Unqueue_Buffer") " procedure
+      unqueues all buffers specified by " (item parameter "Buffers") ",
+      from the source specified by " (item parameter "Source") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Queue_Buffers") " subprogram is
+      equivalent to " (item c_function "alSourceQueueBuffers") ".")
+    (para
+      "The " (item ada_subprogram "Unqueue_Buffers") " subprogram is
+      equivalent to " (item c_function "alSourceUnqueueBuffers") ".")))

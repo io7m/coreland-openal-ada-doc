@@ -21,4 +21,10 @@
   (include "a-openal-source-looping.ud")
   (include "a-openal-source-gain.ud")
   (include "a-openal-source-pitch.ud")
+  (include "a-openal-source-queue_buffers.ud")
+
+  (include "a-openal-source-play.ud")
+  (include "a-openal-source-stop.ud")
+  (include "a-openal-source-pause.ud")
+  (include "a-openal-source-rewind.ud")
 )
