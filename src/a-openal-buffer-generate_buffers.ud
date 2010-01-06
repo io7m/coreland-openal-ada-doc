@@ -8,6 +8,7 @@
 "with OpenAL.Buffer;
 
 type Buffer_t is private;
+type Buffer_Array_t is array (Positive range <>) of Buffer_t;
 
 procedure Generate_Buffers (Buffers : in out Buffer_Array_t);
 "))

@@ -8,6 +8,7 @@
 "with OpenAL.Source;
 
 type Source_t is private;
+type Source_Array_t is array (Positive range <>) of Source_t;
 
 procedure Generate_Sources (Sources : in out Source_Array_t);
 "))
