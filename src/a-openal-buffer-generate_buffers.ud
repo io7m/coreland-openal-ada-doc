@@ -15,7 +15,7 @@ procedure Generate_Buffers (Buffers : in out Buffer_Array_t);
     (title "Description")
     (para
       "The " (item ada_procedure "Generate_Buffers") " procedure
-      generates " (item parameter "Buffers") "'" (item ada_attribute "'Length")
+      generates " (item parameter "Buffers") "'" (item ada_attribute "Length")
       " buffers."))
   (subsection
     (title "Mapping")
