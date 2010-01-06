@@ -3,6 +3,9 @@
   (ref "openal_listener")
   (contents)
 
+  (para "The " (item ada_package "OpenAL.Listener") " package provides
+    subprograms for manipulating the simulation listener.")
+
   (include "a-openal-listener-set_attribute.ud")
   (include "a-openal-listener-set_orientation.ud")
   (include "a-openal-listener-get_attribute.ud")

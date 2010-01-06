@@ -3,5 +3,8 @@
   (ref "openal_context_error")
   (contents)
 
+  (para "The " (item ada_package "OpenAL.Context.Error") " package provides
+    subprograms for retrieving device and context errors.")
+
   (include "a-openal-context-error-get_error.ud")
 )

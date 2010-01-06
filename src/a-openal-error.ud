@@ -3,5 +3,8 @@
   (ref "openal_error")
   (contents)
 
+  (para "The " (item ada_package "OpenAL.Error") " package provides
+    subprograms for retrieving the current error state.")
+
   (include "a-openal-error-get_error.ud")
 )
