@@ -11,6 +11,8 @@
   (include "a-openal-source-generate_sources.ud")
   (include "a-openal-source-delete_sources.ud")
   (include "a-openal-source-is_valid.ud")
+  (include "a-openal-source-position.ud")
+  (include "a-openal-source-velocity.ud")
   (include "a-openal-source-positioning.ud")
   (include "a-openal-source-get_type.ud")
   (include "a-openal-source-current_buffer.ud")

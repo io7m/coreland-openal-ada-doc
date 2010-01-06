@@ -1,0 +1,70 @@
+(section
+  (ref "openal_listener_get_position_f")
+  (ref "openal_listener_get_position_fv")
+  (ref "openal_listener_get_position_i")
+  (ref "openal_listener_get_position_iv")
+  (ref "openal_listener_set_position_i")
+  (ref "openal_listener_set_position_iv")
+  (ref "openal_listener_set_position_f")
+  (ref "openal_listener_set_position_fv")
+ 
+  (title "OpenAL.Listener.Position")
+  (para procedure_desc "Set/Get listener position.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Listener;
+with OpenAL.Types;
+
+procedure Set_Position_f
+  (X : in Types.Float_t;
+   Y : in Types.Float_t;
+   Z : in Types.Float_t);
+
+procedure Set_Position_i
+  (X : in Types.Integer_t;
+   Y : in Types.Integer_t;
+   Z : in Types.Integer_t);
+
+procedure Set_Position_fv
+  (Position : in Types.Vector_3f_t);
+
+procedure Set_Position_iv
+  (Position : in Types.Vector_3i_t);
+
+procedure Get_Position_f
+  (X : out Types.Float_t;
+   Y : out Types.Float_t;
+   Z : out Types.Float_t);
+
+procedure Get_Position_i
+  (X : out Types.Integer_t;
+   Y : out Types.Integer_t;
+   Z : out Types.Integer_t);
+
+procedure Get_Position_fv
+  (Position : out Types.Vector_3f_t);
+
+procedure Get_Position_iv
+  (Position : out Types.Vector_3i_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Position") " procedures
+      retrieve the position of the listener.")
+    (para
+      "The " (item ada_procedure "Set_Position") " procedures
+      set the position of the listener."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Position") " subprograms are
+      equivalent to " (item c_function "alGetListener") " with "
+      (item constant "AL_POSITION") " passed as the attribute
+      parameter.")
+    (para
+      "The " (item ada_subprogram "Set_Position") " subprograms are
+      equivalent to " (item c_function "alListener") " with "
+      (item constant "AL_POSITION") " passed as the attribute
+      parameter.")))

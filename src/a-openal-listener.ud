@@ -7,8 +7,8 @@
 
   (contents)
 
-  (include "a-openal-listener-set_attribute.ud")
-  (include "a-openal-listener-set_orientation.ud")
-  (include "a-openal-listener-get_attribute.ud")
-  (include "a-openal-listener-get_orientation.ud")
+  (include "a-openal-listener-position.ud")
+  (include "a-openal-listener-velocity.ud")
+  (include "a-openal-listener-orientation.ud")
+  (include "a-openal-listener-gain.ud")
 )

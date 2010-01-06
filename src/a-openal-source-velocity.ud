@@ -1,0 +1,78 @@
+(section
+  (ref "openal_source_get_velocity_f")
+  (ref "openal_source_get_velocity_fv")
+  (ref "openal_source_get_velocity_i")
+  (ref "openal_source_get_velocity_iv")
+  (ref "openal_source_set_velocity_i")
+  (ref "openal_source_set_velocity_iv")
+  (ref "openal_source_set_velocity_f")
+  (ref "openal_source_set_velocity_fv")
+ 
+  (title "OpenAL.Source.Velocity")
+  (para procedure_desc "Set/Get source velocity.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+with OpenAL.Types;
+
+procedure Set_Velocity_f
+  (Source    : in Source_ID_t;
+   X         : in Types.Float_t;
+   Y         : in Types.Float_t;
+   Z         : in Types.Float_t);
+
+procedure Set_Velocity_i
+  (Source    : in Source_ID_t;
+   X         : in Types.Integer_t;
+   Y         : in Types.Integer_t;
+   Z         : in Types.Integer_t);
+
+procedure Set_Velocity_fv
+  (Source    : in Source_ID_t;
+   Velocity  : in Types.Vector_3f_t);
+
+procedure Set_Velocity_iv
+  (Source    : in Source_ID_t;
+   Velocity  : in Types.Vector_3i_t);
+
+procedure Get_Velocity_f
+  (Source : in     Source_ID_t;
+   X      :    out Types.Float_t;
+   Y      :    out Types.Float_t;
+   Z      :    out Types.Float_t);
+
+procedure Get_Velocity_i
+  (Source : in     Source_ID_t;
+   X      :    out Types.Integer_t;
+   Y      :    out Types.Integer_t;
+   Z      :    out Types.Integer_t);
+
+procedure Get_Velocity_fv
+  (Source   : in     Source_ID_t;
+   Velocity :    out Types.Vector_3f_t);
+
+procedure Get_Velocity_iv
+  (Source   : in     Source_ID_t;
+   Velocity :    out Types.Vector_3i_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Velocity") " procedures
+      retrieve the velocity of the source.")
+    (para
+      "The " (item ada_procedure "Set_Velocity") " procedures
+      set the velocity of the source."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Velocity") " subprograms are
+      equivalent to " (item c_function "alGetSource") " with "
+      (item constant "AL_VELOCITY") " passed as the attribute
+      parameter.")
+    (para
+      "The " (item ada_subprogram "Set_Velocity") " subprograms are
+      equivalent to " (item c_function "alSource") " with "
+      (item constant "AL_VELOCITY") " passed as the attribute
+      parameter.")))
