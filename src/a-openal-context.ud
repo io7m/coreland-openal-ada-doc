@@ -16,4 +16,5 @@
   (include "a-openal-context-make_context_current.ud")
   (include "a-openal-context-get_current_context.ud")
   (include "a-openal-context-get_context_device.ud")
+  (include "a-openal-context-is_extension_present.ud")
 )

@@ -1,0 +1,50 @@
+(section
+  (ref "openal_source_get_rolloff_factor_float")
+  (ref "openal_source_get_rolloff_factor_discrete")
+  (ref "openal_source_set_rolloff_factor_discrete")
+  (ref "openal_source_set_rolloff_factor_float")
+ 
+  (title "OpenAL.Source.Rolloff_Factor")
+  (para procedure_desc "Set/Get source rolloff factor.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+with OpenAL.Types;
+
+procedure Set_Rolloff_Factor_Float
+  (Source   : in Source_ID_t;
+   Distance : in Types.Float_t);
+
+procedure Set_Rolloff_Factor_Discrete
+  (Source   : in Source_ID_t;
+   Distance : in Types.Integer_t);
+
+procedure Get_Rolloff_Factor_Float
+  (Source   : in     Source_ID_t;
+   Distance :    out Types.Float_t);
+
+procedure Get_Rolloff_Factor_Discrete
+  (Source   : in     Source_ID_t;
+   Distance :    out Types.Integer_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Rolloff_Factor") " procedures
+      retrieve the rolloff factor of the specified " (item parameter "Source") ".")
+    (para
+      "The " (item ada_procedure "Set_Rolloff_Factor") " procedures
+      set the rolloff factor of the specified " (item parameter "Source") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Rolloff_Factor") " subprograms are
+      equivalent to " (item c_function "alGetSource") " with "
+      (item constant "AL_ROLLOFF_FACTOR") " passed as the attribute
+      parameter.")
+    (para
+      "The " (item ada_subprogram "Set_Rolloff_Factor") " subprograms are
+      equivalent to " (item c_function "alSource") " with "
+      (item constant "AL_ROLLOFF_FACTOR") " passed as the attribute
+      parameter.")))

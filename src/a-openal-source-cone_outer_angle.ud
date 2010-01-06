@@ -1,0 +1,50 @@
+(section
+  (ref "openal_source_get_cone_outer_angle_float")
+  (ref "openal_source_get_cone_outer_angle_discrete")
+  (ref "openal_source_set_cone_outer_angle_discrete")
+  (ref "openal_source_set_cone_outer_angle_float")
+ 
+  (title "OpenAL.Source.Cone_Outer_Angle")
+  (para procedure_desc "Set/Get outer angle of sound cone for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+with OpenAL.Types;
+
+procedure Set_Cone_Outer_Angle_Float
+  (Source   : in Source_ID_t;
+   Distance : in Types.Float_t);
+
+procedure Set_Cone_Outer_Angle_Discrete
+  (Source   : in Source_ID_t;
+   Distance : in Types.Integer_t);
+
+procedure Get_Cone_Outer_Angle_Float
+  (Source   : in     Source_ID_t;
+   Distance :    out Types.Float_t);
+
+procedure Get_Cone_Outer_Angle_Discrete
+  (Source   : in     Source_ID_t;
+   Distance :    out Types.Integer_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Cone_Outer_Angle") " procedures
+      retrieve the outer angle of the sound cone of the specified " (item parameter "Source") ".")
+    (para
+      "The " (item ada_procedure "Set_Cone_Outer_Angle") " procedures
+      set the outer angle of the sound cone of the specified " (item parameter "Source") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Cone_Outer_Angle") " subprograms are
+      equivalent to " (item c_function "alGetSource") " with "
+      (item constant "AL_CONE_OUTER_ANGLE") " passed as the attribute
+      parameter.")
+    (para
+      "The " (item ada_subprogram "Set_Cone_Outer_Angle") " subprograms are
+      equivalent to " (item c_function "alSource") " with "
+      (item constant "AL_CONE_OUTER_ANGLE") " passed as the attribute
+      parameter.")))

@@ -1,0 +1,37 @@
+(section
+  (ref "openal_source_set_cone_outer_gain")
+  (ref "openal_source_get_cone_outer_gain")
+  (title "OpenAL.Source.Cone_Outer_Gain")
+  (para procedure_desc "Get/Set outer gain for sound cone of source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+procedure Set_Cone_Outer_Gain
+  (Source : in Source_ID_t;
+   Gain   : in Types.Float_t);
+
+procedure Get_Cone_Outer_Gain
+  (Source : in     Source_ID_t;
+   Gain   :    out Types.Float_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Cone_Outer_Gain") " procedure
+      sets the outer gain multiplication factor for the source specified by "
+      (item parameter "Source") ".")
+    (para
+      "The " (item ada_procedure "Get_Cone_Outer_Gain") " procedure
+      retrieves the current value of the above attribute."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Cone_Outer_Gain") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_CONE_OUTER_GAIN") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Cone_Outer_Gain") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_CONE_OUTER_GAIN") " attribute.")))
