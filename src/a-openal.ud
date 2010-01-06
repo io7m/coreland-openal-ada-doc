@@ -15,4 +15,5 @@
   (include "a-openal-error.ud")
   (include "a-openal-listener.ud")
   (include "a-openal-thin.ud")
+  (include "a-openal-source.ud")
 )
