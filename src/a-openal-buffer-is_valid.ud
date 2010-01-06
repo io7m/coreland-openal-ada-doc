@@ -1,7 +1,7 @@
 (section
   (ref "openal_buffer_is_valid")
   (title "OpenAL.Buffer.Is_Valid")
-  (para function_desc "Set buffer sample data.")
+  (para function_desc "Is valid buffer?")
   (subsection
     (title "Synopsis")
     (para-verbatim function_synopsis
