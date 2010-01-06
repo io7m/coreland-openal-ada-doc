@@ -4,6 +4,7 @@
   (ref "openal_listener_set_orientation_f")
   (ref "openal_listener_set_orientation_i")
 
+  (title "OpenAL.Listener.Orientation")
   (para procedure_desc "Get/Set listener orientation.")
   (subsection
     (title "Synopsis")
