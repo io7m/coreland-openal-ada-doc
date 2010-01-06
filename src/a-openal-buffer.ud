@@ -3,8 +3,8 @@
   (ref "openal_buffer")
   (contents)
 
-  (include "a-openal-buffer-generate-buffers.ud")
-  (include "a-openal-buffer-delete-buffers.ud")
+  (include "a-openal-buffer-generate_buffers.ud")
+  (include "a-openal-buffer-delete_buffers.ud")
   (include "a-openal-buffer-set_attribute.ud")
   (include "a-openal-buffer-set_data.ud")
   (include "a-openal-buffer-is_valid.ud")
