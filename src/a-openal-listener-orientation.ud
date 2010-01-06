@@ -1,8 +1,8 @@
 (section
-  (ref "openal_listener_get_orientation_f")
-  (ref "openal_listener_get_orientation_i")
-  (ref "openal_listener_set_orientation_f")
-  (ref "openal_listener_set_orientation_i")
+  (ref "openal_listener_get_orientation_float")
+  (ref "openal_listener_get_orientation_discrete")
+  (ref "openal_listener_set_orientation_float")
+  (ref "openal_listener_set_orientation_discrete")
 
   (title "OpenAL.Listener.Orientation")
   (para procedure_desc "Get/Set listener orientation.")
@@ -12,19 +12,19 @@
 "with OpenAL.Listener;
 with OpenAL.Types;
 
-procedure Get_Orientation_f
+procedure Get_Orientation_Float
   (Forward : out Types.Vector_3f_t;
    Up      : out Types.Vector_3f_t);
 
-procedure Get_Orientation_i
+procedure Get_Orientation_Discrete
   (Forward : out Types.Vector_3i_t;
    Up      : out Types.Vector_3i_t);
 
-procedure Set_Orientation_f
+procedure Set_Orientation_Float
   (Forward : in Types.Vector_3f_t;
    Up      : in Types.Vector_3f_t);
 
-procedure Set_Orientation_i
+procedure Set_Orientation_Discrete
   (Forward : in Types.Vector_3i_t;
    Up      : in Types.Vector_3i_t);
 "))

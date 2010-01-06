@@ -1,12 +1,12 @@
 (section
-  (ref "openal_source_get_velocity_f")
-  (ref "openal_source_get_velocity_fv")
-  (ref "openal_source_get_velocity_i")
-  (ref "openal_source_get_velocity_iv")
-  (ref "openal_source_set_velocity_i")
-  (ref "openal_source_set_velocity_iv")
-  (ref "openal_source_set_velocity_f")
-  (ref "openal_source_set_velocity_fv")
+  (ref "openal_source_get_velocity_float")
+  (ref "openal_source_get_velocity_float_list")
+  (ref "openal_source_get_velocity_discrete")
+  (ref "openal_source_get_velocity_discrete_list")
+  (ref "openal_source_set_velocity_discrete")
+  (ref "openal_source_set_velocity_discrete_list")
+  (ref "openal_source_set_velocity_float")
+  (ref "openal_source_set_velocity_float_list")
  
   (title "OpenAL.Source.Velocity")
   (para procedure_desc "Set/Get source velocity.")
@@ -16,43 +16,43 @@
 "with OpenAL.Source;
 with OpenAL.Types;
 
-procedure Set_Velocity_f
+procedure Set_Velocity_Float
   (Source    : in Source_ID_t;
    X         : in Types.Float_t;
    Y         : in Types.Float_t;
    Z         : in Types.Float_t);
 
-procedure Set_Velocity_i
+procedure Set_Velocity_Discrete
   (Source    : in Source_ID_t;
    X         : in Types.Integer_t;
    Y         : in Types.Integer_t;
    Z         : in Types.Integer_t);
 
-procedure Set_Velocity_fv
+procedure Set_Velocity_Float_List
   (Source    : in Source_ID_t;
    Velocity  : in Types.Vector_3f_t);
 
-procedure Set_Velocity_iv
+procedure Set_Velocity_Discrete_List
   (Source    : in Source_ID_t;
    Velocity  : in Types.Vector_3i_t);
 
-procedure Get_Velocity_f
+procedure Get_Velocity_Float
   (Source : in     Source_ID_t;
    X      :    out Types.Float_t;
    Y      :    out Types.Float_t;
    Z      :    out Types.Float_t);
 
-procedure Get_Velocity_i
+procedure Get_Velocity_Discrete
   (Source : in     Source_ID_t;
    X      :    out Types.Integer_t;
    Y      :    out Types.Integer_t;
    Z      :    out Types.Integer_t);
 
-procedure Get_Velocity_fv
+procedure Get_Velocity_Float_List
   (Source   : in     Source_ID_t;
    Velocity :    out Types.Vector_3f_t);
 
-procedure Get_Velocity_iv
+procedure Get_Velocity_Discrete_List
   (Source   : in     Source_ID_t;
    Velocity :    out Types.Vector_3i_t);
 "))
