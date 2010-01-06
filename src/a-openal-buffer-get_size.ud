@@ -1,0 +1,27 @@
+(section
+  (ref "openal_buffer_get_size")
+  (title "OpenAL.Buffer.Get_Size")
+  (para procedure_desc "Get buffer size.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Buffer;
+
+type Sample_Size_t is range 1 .. Thin.Size_t'Last;
+
+procedure Get_Size
+  (Buffer : in     Buffer_ID_t;
+   Size   :    out Sample_Size_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Size") " procedure retrieves
+      the size in bytes of the sample data in the buffer specified by "
+      (item parameter "Buffer") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Size") " subprogram is
+      equivalent to " (item c_function "alGetBuffer") " with "
+      (item constant "AL_SIZE") " as the attribute parameter.")))

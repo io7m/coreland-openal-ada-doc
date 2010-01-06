@@ -1,0 +1,27 @@
+(section
+  (ref "openal_buffer_get_frequency")
+  (title "OpenAL.Buffer.Get_Frequency")
+  (para procedure_desc "Get buffer frequency.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Buffer;
+
+type Sample_Frequency_t is range 8 .. 16;
+
+procedure Get_Frequency
+  (Buffer    : in     Buffer_ID_t;
+   Frequency :    out Sample_Frequency_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Frequency") " procedure retrieves
+      the frequency of sample data in the buffer specified by "
+      (item parameter "Buffer") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Frequency") " subprogram is
+      equivalent to " (item c_function "alGetBuffer") " with "
+      (item constant "AL_FREQUENCY") " as the attribute parameter.")))
