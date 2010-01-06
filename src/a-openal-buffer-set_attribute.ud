@@ -60,4 +60,4 @@ procedure Set_Attribute_iv
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Set_Attribute") " subprograms are
-      equivalent to " (item function "alBuffer") ".")))
+      equivalent to " (item c_function "alBuffer") ".")))

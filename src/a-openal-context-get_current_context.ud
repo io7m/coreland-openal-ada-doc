@@ -1,0 +1,21 @@
+(section
+  (ref "openal_context_get_current_context")
+  (title "OpenAL.Context.Get_Current_Context")
+  (para function_desc "Retrieve current context")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+function Get_Current_Context return Context_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Current_Context") " function
+      retrieves the current context."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Current_Context") " subprogram is equivalent
+      to " (item c_function "alcGetCurrentContext") ".")))

@@ -1,29 +1,30 @@
 (section
-  (ref "openal_error_get_error")
-  (title "OpenAL.Error.Get_Error")
-  (para function_desc "Get current error.")
+  (ref "openal_context_error_get_error")
+  (title "OpenAL.Context.Error.Get_Error")
+  (para function_desc "Get current error for device.")
   (subsection
     (title "Synopsis")
     (para-verbatim function_synopsis
-"with OpenAL.Error;
+"with OpenAL.Context.Error;
 
 type Error_t is
   (No_Error,
-   Invalid_Name,
+   Invalid_Device,
+   Invalid_Context,
    Invalid_Enumeration,
    Invalid_Value,
-   Invalid_Operation,
    Out_Of_Memory);
 
-function Get_Error return Error_t;
+function Get_Error (Device : in Device_t) return Error_t;
 "))
   (subsection
     (title "Description")
     (para
       "The " (item ada_function "Get_Error") " function returns
-      the current error state."))
+      the current error state for the device specified by "
+      (item parameter "Device") "."))
   (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Get_Error") " subprogram is equivalent
-      to " (item c_function "alGetError") ".")))
+      to " (item c_function "alcGetError") ".")))

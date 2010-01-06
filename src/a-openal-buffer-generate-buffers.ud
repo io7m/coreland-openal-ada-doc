@@ -21,4 +21,4 @@ procedure Generate_Buffers (Buffers : in out Buffer_Array_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Generate_Buffers") " subprogram is equivalent to "
-      (item function "alGenBuffers") ".")))
+      (item c_function "alGenBuffers") ".")))

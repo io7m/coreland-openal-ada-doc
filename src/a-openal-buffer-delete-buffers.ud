@@ -18,4 +18,4 @@ procedure Delete_Buffers (Buffers : in Buffer_Array_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Delete_Buffers") " subprogram is equivalent
-      to " (item function "alDeleteBuffers") ".")))
+      to " (item c_function "alDeleteBuffers") ".")))

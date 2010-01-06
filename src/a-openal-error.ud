@@ -1,6 +1,7 @@
 (section
   (title "OpenAL.Error")
   (ref "openal_error")
+  (contents)
 
   (include "a-openal-error-get_error.ud")
 )

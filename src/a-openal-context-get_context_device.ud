@@ -1,0 +1,22 @@
+(section
+  (ref "openal_context_get_context_device")
+  (title "OpenAL.Context.Get_Context_Device")
+  (para function_desc "Retrieve device associated with context")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+function Get_Context_Device (Context : in Context_t) return Device_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Context_Device") " function
+      retrieves the device associated with the context specified by "
+      (item parameter "Context") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Context_Device") " subprogram is equivalent
+      to " (item c_function "alcGetContextsDevice") ".")))

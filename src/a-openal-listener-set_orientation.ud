@@ -33,5 +33,5 @@ procedure Set_Orientation_i
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Set_Orientation") " subprograms are
-      equivalent to " (item function "alListener") " using "
+      equivalent to " (item c_function "alListener") " using "
       (item constant "AL_ORIENTATION") " as the attribute parameter.")))

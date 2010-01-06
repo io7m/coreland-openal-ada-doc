@@ -1,0 +1,30 @@
+(section
+  (ref "openal_context_open_device")
+  (ref "openal_context_open_default_device")
+  (title "OpenAL.Context.Open_Device")
+  (para function_desc "Open audio device")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+type Device_t is private;
+
+Invalid_Device : constant Device_t;
+
+function Open_Device (Specifier : in String) return Device_t;
+
+function Open_Default_Device return Device_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Open_Device") " and " 
+      (item ada_function "Open_Default_Device") " functions
+      open audio devices. On failure, the functions return "
+      (item constant "Invalid_Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Open_Device") " subprograms are equivalent
+      to " (item c_function "alcOpenDevice") ".")))

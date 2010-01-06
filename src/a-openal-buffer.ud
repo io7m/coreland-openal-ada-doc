@@ -1,6 +1,7 @@
 (section
   (title "OpenAL.Buffer")
   (ref "openal_buffer")
+  (contents)
 
   (include "a-openal-buffer-generate-buffers.ud")
   (include "a-openal-buffer-delete-buffers.ud")

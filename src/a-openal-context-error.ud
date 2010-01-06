@@ -1,0 +1,7 @@
+(section
+  (title "OpenAL.Context.Error")
+  (ref "openal_context_error")
+  (contents)
+
+  (include "a-openal-context-error-get_error.ud")
+)

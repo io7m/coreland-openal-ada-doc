@@ -54,4 +54,4 @@ procedure Get_Attribute_iv
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Get_Attribute") " subprograms are
-      equivalent to " (item function "alGetListener") ".")))
+      equivalent to " (item c_function "alGetListener") ".")))

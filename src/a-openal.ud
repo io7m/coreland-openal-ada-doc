@@ -10,6 +10,8 @@
     (include "m_proc_map.ud"))
 
   (include "a-openal-buffer.ud")
+  (include "a-openal-context.ud")
+  (include "a-openal-context-error.ud")
   (include "a-openal-error.ud")
   (include "a-openal-listener.ud")
   (include "a-openal-thin.ud")

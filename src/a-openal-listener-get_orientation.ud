@@ -31,5 +31,5 @@ procedure Get_Orientation_i
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Get_Orientation") " subprograms are
-      equivalent to " (item function "alGetListener") " using "
+      equivalent to " (item c_function "alGetListener") " using "
       (item constant "AL_ORIENTATION") " as the attribute parameter.")))

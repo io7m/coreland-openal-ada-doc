@@ -61,4 +61,4 @@ procedure Set_Data_Stereo_16
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Set_Data") " subprograms are
-      equivalent to " (item function "alBufferData") ".")))
+      equivalent to " (item c_function "alBufferData") ".")))

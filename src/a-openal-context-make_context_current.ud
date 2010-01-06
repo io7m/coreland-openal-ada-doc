@@ -1,0 +1,23 @@
+(section
+  (ref "openal_context_make_context_current")
+  (title "OpenAL.Context.Make_Context_Current")
+  (para function_desc "Make context current")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+function Make_Context_Current (Context : in Context_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Make_Context_Current") " function
+      makes sets the current context to the context specified by "
+      (item parameter "Context") ". The function returns " (item constant "False")
+      " on failure."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Make_Context_Current") " subprogram is equivalent
+      to " (item c_function "alcMakeContextCurrent") ".")))

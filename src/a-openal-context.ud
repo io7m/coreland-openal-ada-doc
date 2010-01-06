@@ -1,0 +1,15 @@
+(section
+  (title "OpenAL.Context")
+  (ref "openal_context")
+  (contents)
+
+  (include "a-openal-context-open_device.ud")
+  (include "a-openal-context-close_device.ud")
+  (include "a-openal-context-create_context.ud")
+  (include "a-openal-context-suspend_context.ud")
+  (include "a-openal-context-process_context.ud")
+  (include "a-openal-context-destroy_context.ud")
+  (include "a-openal-context-make_context_current.ud")
+  (include "a-openal-context-get_current_context.ud")
+  (include "a-openal-context-get_context_device.ud")
+)

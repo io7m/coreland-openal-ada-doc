@@ -1,0 +1,26 @@
+(section
+  (ref "openal_context_create_context")
+  (title "OpenAL.Context.Create_Context")
+  (para function_desc "Create context for device")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+type Context_t is private;
+
+Invalid_Context : constant Context_t;
+
+function Create_Context (Device : in Device_t) return Context_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Create_Context") " function
+      creates a new context for the device specified by "
+      (item parameter "Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Create_Context") " subprogram is equivalent
+      to " (item c_function "alcCreateContext") ".")))
