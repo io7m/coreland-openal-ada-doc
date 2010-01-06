@@ -1,0 +1,21 @@
+(section
+  (ref "openal_context_capture_stop")
+  (title "OpenAL.Context.Capture.Stop")
+  (para procedure_desc "Stop audio capture")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Context.Capture;
+
+procedure Stop (Device : in OpenAL.Context.Device_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Stop") " procedure stops audio capture
+      on the audio device specified by " (item parameter "Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Stop") " subprogram is equivalent
+      to " (item c_procedure "alcCaptureStop") ".")))

@@ -1,0 +1,14 @@
+(section
+  (title "OpenAL.Context.Capture")
+  (ref "openal_context_capture")
+
+  (para "The " (item ada_package "OpenAL.Context.Capture") " package provides
+    subprograms for manipulating capture devices.")
+
+  (contents)
+
+  (include "a-openal-context-capture-open_device.ud")
+  (include "a-openal-context-capture-close_device.ud")
+  (include "a-openal-context-capture-start.ud")
+  (include "a-openal-context-capture-stop.ud")
+)

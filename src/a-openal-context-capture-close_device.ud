@@ -1,0 +1,21 @@
+(section
+  (ref "openal_context_capture_close_device")
+  (title "OpenAL.Context.Capture.Close_Device")
+  (para function_desc "Close audio capture device")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context.Capture;
+
+function Close_Device (Device : in OpenAL.Context.Device_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Close_Device") " function closes
+      the audio device specified by " (item parameter "Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Close_Device") " subprogram is equivalent
+      to " (item c_function "alcCaptureCloseDevice") ".")))

@@ -1,0 +1,37 @@
+(section
+  (ref "openal_context_capture_open_device")
+  (ref "openal_context_capture_open_default_device")
+  (title "OpenAL.Context.Open_Device")
+  (para function_desc "Open audio capture device")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context.Capture;
+
+type Frequency_t   is range 1 .. 1_944_810_000;
+type Buffer_Size_t is range 2 .. 65536;
+type Format_t      is (Mono_8, Stereo_8, Mono_16, Stereo_16);
+
+function Open_Device
+  (Name        : in String;
+   Frequency   : in Frequency_t;
+   Format      : in Format_t;
+   Buffer_Size : in Buffer_Size_t) return OpenAL.Context.Device_t;
+
+function Open_Default_Device
+  (Frequency   : in Frequency_t;
+   Format      : in Format_t;
+   Buffer_Size : in Buffer_Size_t) return OpenAL.Context.Device_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Open_Device") " and " 
+      (item ada_function "Open_Default_Device") " functions
+      open audio capture devices. On failure, the functions return "
+      (item constant "Invalid_Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Open_Device") " subprograms are equivalent
+      to " (item c_function "alcCaptureOpenDevice") ".")))
