@@ -1,0 +1,10 @@
+(section
+  (title "OpenAL.Buffer")
+  (ref "openal_buffer")
+
+  (include "a-openal-buffer-generate-buffers.ud")
+  (include "a-openal-buffer-delete-buffers.ud")
+  (include "a-openal-buffer-set_attribute.ud")
+  (include "a-openal-buffer-set_data.ud")
+  (include "a-openal-buffer-is_valid.ud")
+)

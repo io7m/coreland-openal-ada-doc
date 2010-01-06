@@ -1,0 +1,29 @@
+(section
+  (ref "openal_error_get_error")
+  (title "OpenAL.Error.Get_Error")
+  (para function_desc "Get current error.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Error;
+
+type Error_t is
+  (No_Error,
+   Invalid_Name,
+   Invalid_Enumeration,
+   Invalid_Value,
+   Invalid_Operation,
+   Out_Of_Memory);
+
+function Get_Error return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Error") " function returns
+      the current error state."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Error") " subprogram is equivalent
+      to " (item function "alGetError") ".")))

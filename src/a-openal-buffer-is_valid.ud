@@ -1,0 +1,22 @@
+(section
+  (ref "openal_buffer_is_valid")
+  (title "OpenAL.Buffer.Is_Valid")
+  (para procedure_desc "Set buffer sample data.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Buffer;
+
+function Is_Valid (Buffer : in Buffer_ID_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Is_Valid") " function returns "
+      (item constant "True") " if the buffer specified by "
+      (item parameter "Buffer") " is valid."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Valid") " function is
+      equivalent to " (item function "alIsBuffer") ".")))

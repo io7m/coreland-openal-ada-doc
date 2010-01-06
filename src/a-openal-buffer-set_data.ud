@@ -1,0 +1,64 @@
+(section
+  (ref "openal_buffer_set_data")
+  (ref "openal_buffer_set_data_mono_8")
+  (ref "openal_buffer_set_data_stereo_8")
+  (ref "openal_buffer_set_data_mono_16")
+  (ref "openal_buffer_set_data_stereo_16")
+  (ref "openal_buffer_data")
+  (title "OpenAL.Buffer.Set_Data")
+  (para procedure_desc "Set buffer sample data.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Buffer;
+with OpenAL.Thin;
+with OpenAL.Types;
+
+type Frequency_t is new Thin.Size_t range 1 .. Thin.Size_t'Last;
+
+type Sample_16_t is range -32768 .. 32767;
+for Sample_16_t'Size use 16;
+
+type Sample_8_t is range 0 .. 255;
+for Sample_8_t'Size use 8;
+
+type Sample_Array_16_t is array (Natural range <>) of aliased Sample_16_t;
+type Sample_Array_8_t is array (Natural range <>) of aliased Sample_8_t;
+
+procedure Set_Data_Mono_8
+  (Buffer    : in Buffer_ID_t;
+   Data      : in Sample_Array_8_t;
+   Frequency : in Frequency_t);
+
+procedure Set_Data_Stereo_8
+  (Buffer    : in Buffer_ID_t;
+   Data      : in Sample_Array_8_t;
+   Frequency : in Frequency_t);
+
+procedure Set_Data_Mono_16
+  (Buffer    : in Buffer_ID_t;
+   Data      : in Sample_Array_16_t;
+   Frequency : in Frequency_t);
+
+procedure Set_Data_Stereo_16
+  (Buffer    : in Buffer_ID_t;
+   Data      : in Sample_Array_16_t;
+   Frequency : in Frequency_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Data") " procedures specify
+      sample data for the buffer specified by " (item parameter "Buffer")
+      ".")
+    (para
+      "The sample data is unsigned 8 bit audio or signed 16 bit audio in
+      the same format as described in the "
+      (link-ext
+        "http://connect.creativelabs.com/openal/Documentation/OpenAL%201.1%20Specification.htm#_Toc199835897"
+        "OpenAL specification") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Data") " subprograms are
+      equivalent to " (item function "alBufferData") ".")))

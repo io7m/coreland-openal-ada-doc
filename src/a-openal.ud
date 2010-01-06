@@ -9,5 +9,8 @@
       and the original C API.")
     (include "m_proc_map.ud"))
 
+  (include "a-openal-buffer.ud")
+  (include "a-openal-error.ud")
+  (include "a-openal-listener.ud")
   (include "a-openal-thin.ud")
 )

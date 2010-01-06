@@ -1,0 +1,37 @@
+(section
+  (ref "openal_listener_set_orientation")
+  (ref "openal_listener_set_orientation_i")
+  (ref "openal_listener_set_orientation_f")
+  (ref "openal_listener_set_orientation_3i")
+  (ref "openal_listener_set_orientation_3f")
+  (ref "openal_listener_set_orientation_iv")
+  (ref "openal_listener_set_orientation_fv")
+  (title "OpenAL.Listener.Set_Orientation")
+  (para procedure_desc "Set listener orientation.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Listener;
+with OpenAL.Types;
+
+procedure Set_Orientation_f
+  (Forward : in Types.Vector_3f_t;
+   Up      : in Types.Vector_3f_t);
+
+procedure Set_Orientation_i
+  (Forward : in Types.Vector_3i_t;
+   Up      : in Types.Vector_3i_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Orientation") " procedures
+      set the forward vector of the listener to "
+      (item parameter "Forward") " and the up vector of the listener
+      to " (item parameter "Up") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Orientation") " subprograms are
+      equivalent to " (item function "alListener") " using "
+      (item constant "AL_ORIENTATION") " as the attribute parameter.")))

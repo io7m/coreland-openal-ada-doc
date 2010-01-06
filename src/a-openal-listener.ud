@@ -1,0 +1,9 @@
+(section
+  (title "OpenAL.Listener")
+  (ref "openal_listener")
+
+  (include "a-openal-listener-set_attribute.ud")
+  (include "a-openal-listener-set_orientation.ud")
+  (include "a-openal-listener-get_attribute.ud")
+  (include "a-openal-listener-get_orientation.ud")
+)

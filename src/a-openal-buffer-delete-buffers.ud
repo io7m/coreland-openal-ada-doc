@@ -1,0 +1,21 @@
+(section
+  (ref "openal_buffer_delete_buffers")
+  (title "OpenAL.Buffer.Delete_Buffers")
+  (para procedure_desc "Delete buffer(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Buffer;
+
+procedure Delete_Buffers (Buffers : in Buffer_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Delete_Buffers") " procedure
+      deletes all buffers specified by " (item parameter "Buffers") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Delete_Buffers") " subprogram is equivalent
+      to " (item function "alDeleteBuffers") ".")))
