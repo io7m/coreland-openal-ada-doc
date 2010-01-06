@@ -1,0 +1,43 @@
+(section
+  (ref "openal_context_capture_samples_mono_8")
+  (ref "openal_context_capture_samples_stereo_8")
+  (ref "openal_context_capture_samples_mono_16")
+  (ref "openal_context_capture_samples_stereo_16")
+
+  (title "OpenAL.Context.Capture.Samples")
+  (para procedure_desc "Retrieve captured samples")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Context.Capture;
+with Ada.IO_Exceptions;
+
+procedure Samples_Mono_8
+  (Device  : in     Device_t;
+   Samples :    out OpenAL.Buffer.Sample_Array_8_t);
+
+procedure Samples_Stereo_8
+  (Device  : in     Device_t;
+   Samples :    out OpenAL.Buffer.Sample_Array_8_t);
+
+procedure Samples_Mono_16
+  (Device  : in     Device_t;
+   Samples :    out OpenAL.Buffer.Sample_Array_16_t);
+
+procedure Samples_Stereo_16
+  (Device  : in     Device_t;
+   Samples :    out OpenAL.Buffer.Sample_Array_16_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Samples") " procedures retrieve "
+      (item parameter "Samples") "'" (item ada_attribute "Length") 
+      " samples of audio data. If the data format requested does not
+      match that that the device was opened with, the procedures raise "
+      (item ada_exception "Ada.IO_Exceptions.Data_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Samples") " subprograms are equivalent
+      to " (item c_procedure "alcCaptureSamples") ".")))
