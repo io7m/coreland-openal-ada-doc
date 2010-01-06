@@ -3,7 +3,7 @@
   (ref "openal_source")
   (contents)
 
-  (include "a-openal-source-generate-sources.ud")
-  (include "a-openal-source-delete-sources.ud")
+  (include "a-openal-source-generate_sources.ud")
+  (include "a-openal-source-delete_sources.ud")
   (include "a-openal-source-is_valid.ud")
 )
