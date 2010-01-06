@@ -1,7 +1,7 @@
 (section
   (ref "openal_source_queue_buffers")
   (ref "openal_source_unqueue_buffers")
-  (title "OpenAL.Source.Current_Buffer")
+  (title "OpenAL.Source.Queue_Buffers")
   (para procedure_desc "Queue/unqueue buffers for source.")
   (subsection
     (title "Synopsis")
