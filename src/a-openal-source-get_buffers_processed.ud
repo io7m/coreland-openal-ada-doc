@@ -1,0 +1,25 @@
+(section
+  (ref "openal_source_get_buffers_processed")
+  (title "OpenAL.Source.Get_Buffers_Processed")
+  (para procedure_desc "Get number of processed buffers.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+procedure Get_Buffers_Processed
+  (Source  : in     Source_ID_t;
+   Buffers :    out Natural);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Buffers_Processed") " procedure
+      retrieves the number of buffers that have been played by the specified "
+      (item parameter "Source") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Buffers_Processed") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_BUFFERS_PROCESSED") " attribute.")))

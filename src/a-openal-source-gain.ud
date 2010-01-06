@@ -1,0 +1,64 @@
+(section
+  (ref "openal_source_set_minimum_gain")
+  (ref "openal_source_get_minimum_gain")
+  (ref "openal_source_set_maximum_gain")
+  (ref "openal_source_get_maximum_gain")
+  (title "OpenAL.Source.Gain")
+  (para procedure_desc "Get/Set source minimum/maximum gain.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+subtype Gain_t is Types.Float_t range 0.0 .. 1.0;
+
+procedure Set_Minimum_Gain
+  (Source : in Source_ID_t;
+   Gain   : in Gain_t);
+
+procedure Get_Minimum_Gain
+  (Source : in     Source_ID_t;
+   Gain   :    out Gain_t);
+
+procedure Set_Maximum_Gain
+  (Source : in Source_ID_t;
+   Gain   : in Gain_t);
+
+procedure Get_Maximum_Gain
+  (Source : in     Source_ID_t;
+   Gain   :    out Gain_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Minimum_Gain") " procedure
+      indicates the minimal gain that is always guaranteed for the specified "
+      (item parameter "Source") ".")
+    (para
+      "The " (item ada_procedure "Get_Minimum_Gain") " procedure
+      retrieves the current value of the above attribute.")
+    (para
+      "The " (item ada_procedure "Set_Maximum_Gain") " procedure
+      indicates the maximum gain permitted for the specified "
+      (item parameter "Source") ".")
+    (para
+      "The " (item ada_procedure "Get_Maximum_Gain") " procedure
+      retrieves the current value of the above attribute."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Minimum_Gain") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_MIN_GAIN") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Minimum_Gain") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_MIN_GAIN") " attribute.")
+    (para
+      "The " (item ada_subprogram "Set_Maximum_Gain") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_MAX_GAIN") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Maximum_Gain") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_MAX_GAIN") " attribute.")))

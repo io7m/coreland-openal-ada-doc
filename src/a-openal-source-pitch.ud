@@ -1,0 +1,41 @@
+(section
+  (ref "openal_source_set_pitch")
+  (ref "openal_source_get_pitch")
+  (title "OpenAL.Source.Pitch")
+  (para procedure_desc "Get/Set source pitch.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+subtype Pitch_t is Types.Float_t range 0.00001 .. Types.Float_t'Last;
+
+-- proc_map : alSource
+procedure Set_Pitch
+  (Source : in Source_ID_t;
+   Pitch  : in Pitch_t);
+
+-- proc_map : alGetSource
+procedure Get_Pitch
+  (Source : in     Source_ID_t;
+   Pitch  :    out Pitch_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Pitch") " procedure
+      indicates the desired pitch shift for the given " (item parameter "Source") ",
+      where " (item constant "1.0") " equals identity.")
+    (para
+      "The " (item ada_procedure "Get_Pitch") " procedure
+      retrieves the current value of the above attribute."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Pitch") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_PITCH") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Pitch") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_PITCH") " attribute.")))

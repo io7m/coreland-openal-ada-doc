@@ -1,0 +1,25 @@
+(section
+  (ref "openal_source_get_buffers_queued")
+  (title "OpenAL.Source.Get_Buffers_Queued")
+  (para procedure_desc "Get number of queued buffers.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+procedure Get_Buffers_Queued
+  (Source  : in     Source_ID_t;
+   Buffers :    out Natural);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Buffers_Queued") " procedure
+      retrieves the number of buffers in the queue of the specified "
+      (item parameter "Source") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Buffers_Queued") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_BUFFERS_QUEUED") " attribute.")))

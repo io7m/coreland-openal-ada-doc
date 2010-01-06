@@ -1,0 +1,28 @@
+(section
+  (ref "openal_source_get_type")
+  (title "OpenAL.Source.Get_Type")
+  (para procedure_desc "Get source type.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+type Source_Type_t is (Undetermined, Static, Streaming);
+
+procedure Get_Type
+  (Source      : in     Source_ID_t;
+   Source_Type :    out Source_Type_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Type") " procedure
+      determines whether the specified " (item parameter "Source") " is ready to
+      queue buffers, ready to use a static buffer, or is in an undetermined
+      state where it can be used for either streaming or static playback."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Type") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_SOURCE_TYPE") " attribute.")))

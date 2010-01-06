@@ -1,0 +1,38 @@
+(section
+  (ref "openal_source_set_current_buffer")
+  (ref "openal_source_get_current_buffer")
+  (title "OpenAL.Source.Current_Buffer")
+  (para procedure_desc "Get/Set current buffer for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+with OpenAL.Buffer;
+
+procedure Set_Current_Buffer
+  (Source : in Source_ID_t;
+   Buffer : in OpenAL.Buffer.Buffer_ID_t);
+
+procedure Get_Current_Buffer
+  (Source : in     Source_ID_t;
+   Buffer :    out OpenAL.Buffer.Buffer_ID_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Buffer") " procedure
+      specifies the current buffer object, making it the head entry in the
+      " (item parameter "Source") "'s queue.")
+    (para
+      "The " (item ada_procedure "Get_Buffer") " procedure
+      retrieves the current value of the above attribute."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Buffer") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_BUFFER") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Buffer") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_BUFFER") " attribute.")))

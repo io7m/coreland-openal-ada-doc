@@ -1,0 +1,37 @@
+(section
+  (ref "openal_source_set_looping")
+  (ref "openal_source_get_looping")
+  (title "OpenAL.Source.Looping")
+  (para procedure_desc "Get/Set source looping.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+procedure Set_Looping
+  (Source   : in Source_ID_t;
+   Relative : in Boolean);
+
+procedure Get_Looping
+  (Source   : in     Source_ID_t;
+   Relative :    out Boolean);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Looping") " procedure
+      indicates that the " (item parameter "Source") " will not be in a stopped
+      state once it reaches the end of last buffer in the buffer queue.")
+    (para
+      "The " (item ada_procedure "Get_Looping") " procedure
+      retrieves the current value of the above attribute."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Looping") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_LOOPING") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Looping") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_LOOPING") " attribute.")))

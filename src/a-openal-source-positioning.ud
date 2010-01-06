@@ -1,0 +1,38 @@
+(section
+  (ref "openal_source_set_positioning")
+  (ref "openal_source_get_positioning")
+  (title "OpenAL.Source.Positioning")
+  (para procedure_desc "Get/Set source positioning.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+procedure Set_Positioning
+  (Source   : in Source_ID_t;
+   Relative : in Boolean);
+
+procedure Get_Positioning
+  (Source   : in     Source_ID_t;
+   Relative :    out Boolean);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Positioning") " procedure
+      indicates whether or not the position, velocity, cone, and direction
+      properties of a " (item parameter "Source") " are to be interpreted
+      relative to the listener position.")
+    (para
+      "The " (item ada_procedure "Get_Positioning") " procedure
+      retrieves the current value of the above attribute."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Positioning") " subprogram is
+      equivalent to " (item c_function "alSource") " called with the "
+      (item constant "AL_SOURCE_RELATIVE") " attribute.")
+    (para
+      "The " (item ada_subprogram "Get_Positioning") " subprogram is
+      equivalent to " (item c_function "alGetSource") " called with the "
+      (item constant "AL_SOURCE_RELATIVE") " attribute.")))
