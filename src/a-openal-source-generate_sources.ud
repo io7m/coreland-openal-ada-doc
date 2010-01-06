@@ -1,0 +1,24 @@
+(section
+  (ref "openal_source_generate_sources")
+  (title "OpenAL.Source.Generate_Sources")
+  (para procedure_desc "Generate source(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Source;
+
+type Source_ID_t is private;
+
+procedure Generate_Sources (Sources : in out Source_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Generate_Sources") " procedure
+      generates " (item parameter "Sources") "'" (item ada_attribute "'Length")
+      " sources."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Generate_Sources") " subprogram is equivalent to "
+      (item c_function "alGenSources") ".")))

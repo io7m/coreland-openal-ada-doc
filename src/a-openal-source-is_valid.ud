@@ -1,0 +1,22 @@
+(section
+  (ref "openal_source_is_valid")
+  (title "OpenAL.Source.Is_Valid")
+  (para function_desc "Is valid source?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Source;
+
+function Is_Valid (Source : in Source_ID_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Is_Valid") " function returns "
+      (item constant "True") " if the source specified by "
+      (item parameter "Source") " is valid."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Valid") " function is
+      equivalent to " (item c_function "alIsSource") ".")))
