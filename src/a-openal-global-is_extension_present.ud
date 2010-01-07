@@ -1,0 +1,22 @@
+(section
+  (ref "openal_global_is_extension_present")
+  (title "OpenAL.Global.Is_Extension_Present")
+  (para function_desc "Determine if extension is present")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Global;
+
+function Is_Extension_Present (Name : in String) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Is_Extension_Present") " function
+      returns " (item constant "True") " if the named extension is
+      present in the current context."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Extension_Present") " subprogram is equivalent
+      to " (item c_function "alIsExtensionPresent") ".")))

@@ -10,6 +10,7 @@
   (include "a-openal-global-distance_model.ud")
   (include "a-openal-global-doppler_factor.ud")
   (include "a-openal-global-speed_of_sound.ud")
+  (include "a-openal-global-is_extension_present.ud")
 
   (include "a-openal-global-version.ud")
   (include "a-openal-global-renderer.ud")
