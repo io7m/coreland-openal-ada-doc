@@ -1,0 +1,13 @@
+(section
+  (title "OpenAL.Global")
+  (ref "openal_global")
+
+  (para "The " (item ada_package "OpenAL.Global") " package provides
+    subprograms for manipulating and querying global state.")
+
+  (contents)
+
+  (include "a-openal-global-distance_model.ud")
+  (include "a-openal-global-doppler_factor.ud")
+  (include "a-openal-global-speed_of_sound.ud")
+)

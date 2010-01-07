@@ -1,0 +1,34 @@
+(section
+  (ref "openal_global_doppler_factor")
+  (ref "openal_global_set_doppler_factor")
+  (ref "openal_global_get_doppler_factor")
+
+  (title "OpenAL.Global.Doppler_Factor")
+  (para procedure_desc "Get/set doppler factor.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Global;
+
+procedure Set_Doppler_Factor (Factor : in Types.Natural_Float_t);
+
+function Get_Doppler_Factor return Types.Natural_Float_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Doppler_Factor") " procedure
+      sets the global doppler factor to the value specified by "
+      (item parameter "Model") ".")
+    (para
+      "The " (item ada_function "Get_Doppler_Factor") " function
+      returns the current global doppler factor."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Doppler_Factor") " subprogram is
+      equivalent to " (item c_function "alDopplerFactor") ".")
+    (para
+      "The " (item ada_subprogram "Get_Doppler_Factor") " subprogram is
+      equivalent to " (item c_function "alGetFloat") " with "
+      (item constant "AL_DOPPLER_FACTOR") " as the parameter.")))
