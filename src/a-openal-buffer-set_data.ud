@@ -14,8 +14,6 @@
 with OpenAL.Thin;
 with OpenAL.Types;
 
-type Frequency_t is new Thin.Size_t range 1 .. Thin.Size_t'Last;
-
 type Sample_16_t is range -32768 .. 32767;
 for Sample_16_t'Size use 16;
 
@@ -28,22 +26,22 @@ type Sample_Array_8_t is array (Natural range <>) of aliased Sample_8_t;
 procedure Set_Data_Mono_8
   (Buffer    : in Buffer_t;
    Data      : in Sample_Array_8_t;
-   Frequency : in Frequency_t);
+   Frequency : in Types.Frequency_t);
 
 procedure Set_Data_Stereo_8
   (Buffer    : in Buffer_t;
    Data      : in Sample_Array_8_t;
-   Frequency : in Frequency_t);
+   Frequency : in Types.Frequency_t);
 
 procedure Set_Data_Mono_16
   (Buffer    : in Buffer_t;
    Data      : in Sample_Array_16_t;
-   Frequency : in Frequency_t);
+   Frequency : in Types.Frequency_t);
 
 procedure Set_Data_Stereo_16
   (Buffer    : in Buffer_t;
    Data      : in Sample_Array_16_t;
-   Frequency : in Frequency_t);
+   Frequency : in Types.Frequency_t);
 "))
   (subsection
     (title "Description")

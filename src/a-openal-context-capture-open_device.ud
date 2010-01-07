@@ -7,19 +7,19 @@
     (title "Synopsis")
     (para-verbatim function_synopsis
 "with OpenAL.Context.Capture;
+with OpenAL.Types;
 
-type Frequency_t   is range 1 .. 1_944_810_000;
 type Buffer_Size_t is range 2 .. 65536;
 type Format_t      is (Mono_8, Stereo_8, Mono_16, Stereo_16);
 
 function Open_Device
   (Name        : in String;
-   Frequency   : in Frequency_t;
+   Frequency   : in Types.Frequency_t;
    Format      : in Format_t;
    Buffer_Size : in Buffer_Size_t) return OpenAL.Context.Device_t;
 
 function Open_Default_Device
-  (Frequency   : in Frequency_t;
+  (Frequency   : in Types.Frequency_t;
    Format      : in Format_t;
    Buffer_Size : in Buffer_Size_t) return OpenAL.Context.Device_t;
 "))
