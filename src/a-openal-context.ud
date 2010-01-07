@@ -11,6 +11,7 @@
   (include "a-openal-context-create_context.ud")
   (include "a-openal-context-destroy_context.ud")
   (include "a-openal-context-get_available_capture_devices.ud")
+  (include "a-openal-context-get_available_playback_devices.ud")
   (include "a-openal-context-get_context_device.ud")
   (include "a-openal-context-get_current_context.ud")
   (include "a-openal-context-get_default_capture_device_specifier.ud")

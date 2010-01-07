@@ -157,6 +157,7 @@
 (t-row (item "alcGetIntegerv")(item (link "openal_context_get_stereo_sources" "OpenAL.Context.Get_Stereo_Sources")))
 (t-row (item "alcGetIntegerv")(item (link "openal_context_get_synchronous" "OpenAL.Context.Get_Synchronous")))
 (t-row (item "alcGetString")(item (link "openal_context_get_available_capture_devices" "OpenAL.Context.Get_Available_Capture_Devices")))
+(t-row (item "alcGetString")(item (link "openal_context_get_available_playback_devices" "OpenAL.Context.Get_Available_Playback_Devices")))
 (t-row (item "alcGetString")(item (link "openal_context_get_default_capture_device_specifier" "OpenAL.Context.Get_Default_Capture_Device_Specifier")))
 (t-row (item "alcGetString")(item (link "openal_context_get_default_device_specifier" "OpenAL.Context.Get_Default_Device_Specifier")))
 (t-row (item "alcGetString")(item (link "openal_context_get_device_specifier" "OpenAL.Context.Get_Device_Specifier")))

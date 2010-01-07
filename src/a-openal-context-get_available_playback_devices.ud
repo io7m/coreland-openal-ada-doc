@@ -1,0 +1,25 @@
+(section
+  (ref "openal_context_get_available_playback_devices")
+  (title "OpenAL.Context.Get_Available_Playback_Devices")
+  (para function_desc "Get OpenAL playback devices for device.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.List;
+
+function Get_Available_Playback_Devices return OpenAL.List.String_Vector_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Available_Playback_Devices") " function
+      retrieves the available playback devices as an "
+      (item ada_package "Ada.Containers.Indefinite_Vectors.Vector") 
+      " of " (item ada_type "String") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Available_Playback_Devices")
+      " subprogram is equivalent to " (item c_function "alcGetString") " with "
+      (item constant "ALC_DEVICE_SPECIFIER") " as the parameter.")))
