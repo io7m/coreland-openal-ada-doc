@@ -1,7 +1,7 @@
 (section
   (ref "openal_context_get_device_specifier")
   (title "OpenAL.Context.Get_Device_Specifier")
-  (para function_desc "Get OpenAL extensions for device.")
+  (para function_desc "Get OpenAL device specifier for device.")
   (subsection
     (title "Synopsis")
     (para-verbatim function_synopsis
