@@ -1,0 +1,22 @@
+(section
+  (ref "openal_global_vendor")
+  (title "OpenAL.Global.Vendor")
+  (para function_desc "Get OpenAL vendor.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Global;
+
+function Vendor return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Vendor") " function
+      retrieves the current OpenAL vendor."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Vendor") " subprogram is
+      equivalent to " (item c_function "alGetString") " with "
+      (item constant "AL_VENDOR") " as the parameter.")))

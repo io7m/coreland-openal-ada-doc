@@ -1,0 +1,22 @@
+(section
+  (ref "openal_global_extensions")
+  (title "OpenAL.Global.Extensions")
+  (para function_desc "Get OpenAL extensions.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Global;
+
+function Extensions return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Extensions") " function
+      retrieves the current OpenAL extensions."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Extensions") " subprogram is
+      equivalent to " (item c_function "alGetString") " with "
+      (item constant "AL_EXTENSIONS") " as the parameter.")))

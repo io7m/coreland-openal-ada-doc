@@ -1,0 +1,22 @@
+(section
+  (ref "openal_global_renderer")
+  (title "OpenAL.Global.Renderer")
+  (para function_desc "Get OpenAL renderer.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Global;
+
+function Renderer return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Renderer") " function
+      retrieves the current OpenAL renderer."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Renderer") " subprogram is
+      equivalent to " (item c_function "alGetString") " with "
+      (item constant "AL_RENDERER") " as the parameter.")))
