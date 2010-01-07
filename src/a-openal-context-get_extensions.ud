@@ -17,6 +17,12 @@ function Get_Extensions
       retrieves the available extensions for the device specified by "
       (item parameter "Device") "."))
   (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Device") " is equal to "
+      (item constant "OpenAL.Context.Invalid_Device") ", the procedure
+      will raise " (item ada_exception "Ada.IO_Exceptions.Device_Error") "."))
+  (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Get_Extensions") " subprogram is
