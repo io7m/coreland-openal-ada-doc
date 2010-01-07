@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_mono_sources")
+  (title "OpenAL.Context.Get_Mono_Sources")
+  (para function_desc "Retrieve number of mono sources for device")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Mono_Sources
+  (Device : in Device_t) return Natural;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Mono_Sources") " function
+      retrieves the number of mono sources for the given device."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Mono_Sources") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_MONO_SOURCES") " passed as the parameter.")))

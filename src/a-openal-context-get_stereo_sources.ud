@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_stereo_sources")
+  (title "OpenAL.Context.Get_Stereo_Sources")
+  (para function_desc "Retrieve number of stereo sources for device")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Stereo_Sources
+  (Device : in Device_t) return Natural;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Stereo_Sources") " function
+      retrieves the number of stereo sources for the given device."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Stereo_Sources") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_STEREO_SOURCES") " passed as the parameter.")))

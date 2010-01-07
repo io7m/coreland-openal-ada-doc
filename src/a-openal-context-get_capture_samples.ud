@@ -1,0 +1,25 @@
+(section
+  (ref "openal_context_get_capture_samples")
+  (title "OpenAL.Context.Get_Capture_Samples")
+  (para function_desc "Retrieve device capture_samples")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Capture_Samples
+  (Device : in Device_t) return Natural;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Capture_Samples") " function
+      retrieves the number of available samples for the given
+      capture device."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Capture_Samples") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_CAPTURE_SAMPLES") " passed as the parameter.")))

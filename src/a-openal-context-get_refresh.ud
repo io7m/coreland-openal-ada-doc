@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_refresh")
+  (title "OpenAL.Context.Get_Refresh")
+  (para function_desc "Retrieve device refresh")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Refresh
+  (Device : in Device_t) return Natural;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Refresh") " function
+      retrieves the refresh rate of the given device."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Refresh") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_REFRESH") " passed as the parameter.")))

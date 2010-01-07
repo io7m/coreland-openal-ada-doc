@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_frequency")
+  (title "OpenAL.Context.Get_Frequency")
+  (para function_desc "Retrieve device frequency")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Frequency
+  (Device : in Device_t) return Types.Frequency_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Frequency") " function
+      retrieves the sample frequency of the given device."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Frequency") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_FREQUENCY") " passed as the parameter.")))

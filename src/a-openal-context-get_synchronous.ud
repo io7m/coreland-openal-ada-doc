@@ -1,0 +1,25 @@
+(section
+  (ref "openal_context_get_synchronous")
+  (title "OpenAL.Context.Get_Synchronous")
+  (para function_desc "Device is synchronous?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Synchronous
+  (Device : in Device_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Synchronous") " function
+      returns " (item constant "True") " if the given device is
+      synchronous."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Synchronous") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_SYNC") " passed as the parameter.")))

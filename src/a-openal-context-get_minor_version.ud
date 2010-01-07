@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_minor_version")
+  (title "OpenAL.Context.Get_Minor_Version")
+  (para function_desc "Retrieve minor version of implementation")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Types;
+
+function Get_Minor_Version
+  (Device : in Device_t) return Natural;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Minor_Version") " function
+      retrieves the minor version of the implementation."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Minor_Version") " subprogram is equivalent
+      to " (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_MINOR_VERSION") " passed as the parameter.")))
