@@ -14,7 +14,12 @@
       into several Ada packages, providing strongly typed versions
       of of the original C functions. The strongly typed versions
       use enumeration types and floating point subtypes to prevent
-      the passing of invalid parameters to the API.")
+      the passing of invalid parameters to the API and prevent bugs
+      at compile time. The package avoids use of overloading to
+      prevent ambiguity and avoids use of exceptions for ease of
+      analysis and auditing (exceptions are only raised in
+      cases that would have caused memory corruption with the
+      original C API).")
 
     (para "The package also provides direct access to the original "
       (item package "OpenAL") " functions via the "
