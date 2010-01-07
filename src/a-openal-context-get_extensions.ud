@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_extensions")
+  (title "OpenAL.Context.Get_Extensions")
+  (para function_desc "Get OpenAL extensions for device.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+function Get_Extensions
+  (Device : in Device_t) return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Extensions") " function
+      retrieves the available extensions for the device specified by "
+      (item parameter "Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Extensions") " subprogram is
+      equivalent to " (item c_function "alcGetString") " with "
+      (item constant "ALC_EXTENSIONS") " as the parameter.")))

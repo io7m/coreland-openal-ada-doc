@@ -1,0 +1,24 @@
+(section
+  (ref "openal_context_get_device_specifier")
+  (title "OpenAL.Context.Get_Device_Specifier")
+  (para function_desc "Get OpenAL extensions for device.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+
+function Get_Device_Specifier
+  (Device : in Device_t) return String;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Device_Specifier") " function
+      retrieves the specifier for the device specified by "
+      (item parameter "Device") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Device_Specifier") " subprogram is
+      equivalent to " (item c_function "alcGetString") " with "
+      (item constant "ALC_DEVICE_SPECIFIER") " as the parameter.")))
