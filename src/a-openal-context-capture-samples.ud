@@ -33,8 +33,12 @@ procedure Samples_Stereo_16
     (para
       "The " (item ada_procedure "Samples") " procedures retrieve "
       (item parameter "Samples") "'" (item ada_attribute "Length") 
-      " samples of audio data. If the data format requested does not
-      match that that the device was opened with, the procedures raise "
+      " samples of audio data."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If the data format requested does not match that that the device was
+      opened with, the procedures raise "
       (item ada_exception "Ada.IO_Exceptions.Data_Error") "."))
   (subsection
     (title "Mapping")
