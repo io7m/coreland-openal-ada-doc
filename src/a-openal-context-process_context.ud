@@ -19,4 +19,4 @@ procedure Process_Context (Context : in Context_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Process_Context") " subprogram is equivalent
-      to " (item procedure "alcProcessContext") ".")))
+      to " (item c_function "alcProcessContext") ".")))

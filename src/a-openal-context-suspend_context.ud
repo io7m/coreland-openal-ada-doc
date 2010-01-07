@@ -19,4 +19,4 @@ procedure Suspend_Context (Context : in Context_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Suspend_Context") " subprogram is equivalent
-      to " (item procedure "alcSuspendContext") ".")))
+      to " (item c_function "alcSuspendContext") ".")))

@@ -18,4 +18,4 @@ procedure Destroy_Context (Context : in Context_t);
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Destroy_Context") " subprogram is equivalent
-      to " (item procedure "alcDestroyContext") ".")))
+      to " (item c_function "alcDestroyContext") ".")))
