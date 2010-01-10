@@ -1,0 +1,15 @@
+(section
+  (ref "openal_extension_efx")
+  (title "OpenAL.Extension.EFX")
+
+  (para "The " (item ada_package "OpenAL.Extension.EFX") " package provides
+    the " (link-ext "http://connect.creativelabs.com/developer/Wiki/Introduction%20to%20EFX.aspx"
+    "EFX") " effects extension.")
+
+  (para "The extension may not be present on all " (item package "OpenAL")
+    " implementations. Subprograms are provided to check for the existence
+    of the extension and to safely dynamically load it if it is.")
+
+  (contents)
+
+)

@@ -1,0 +1,6 @@
+(section
+  (ref "openal_extension")
+  (title "OpenAL.Extension")
+
+  (para "The " (item ada_package "OpenAL.Extension") " package serves
+    as the root of all extension packages. It is an empty, pure package."))
