@@ -18,6 +18,13 @@ function Effect_Is_Valid
       (item constant "True") " if the effect specified by "
       (item parameter "Effect") " is valid."))
   (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Is_Valid") " function is

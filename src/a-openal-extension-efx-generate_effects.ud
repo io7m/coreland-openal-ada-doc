@@ -21,6 +21,13 @@ procedure Generate_Effects
       generates " (item parameter "Effects") "'" (item ada_attribute "Length")
       " effects."))
   (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Generate_Effects") " subprogram is equivalent to "

@@ -21,6 +21,13 @@ procedure Generate_Auxiliary_Effect_Slots
       generates " (item parameter "Slots") "'" (item ada_attribute "Length")
       " auxiliary effect slots."))
   (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Generate_Auxiliary_Effect_Slots") " subprogram is equivalent to "

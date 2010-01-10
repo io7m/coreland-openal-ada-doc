@@ -1,0 +1,26 @@
+(section
+  (ref "openal_extension_efx_load_extension")
+  (title "OpenAL.Extension.EFX.Load_Extension")
+  (para function_desc "Load EFX extension")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Extension.EFX;
+
+type Extension_t is private;
+
+function Load_Extension return Extension_t;
+"))
+  (subsection
+    (title "Description")
+    (para "The EFX extension may not be present in all implementations
+      of " (item constant "OpenAL") ". The "
+      (item ada_function "Load_Extension") " function loads the
+      extension if it is present and returns a reference to the
+      extension that must be passed to all other subprograms in
+      the package."))
+  (subsection
+    (title "Exceptions")
+    (para "If any part of the extension cannot be loaded, the function
+      raises " (item ada_exception "OpenAL.Load.Load_Error") " with
+      an appropriate error message.")))

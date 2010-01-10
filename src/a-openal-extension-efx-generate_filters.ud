@@ -21,6 +21,13 @@ procedure Generate_Filters
       generates " (item parameter "Filters") "'" (item ada_attribute "Length")
       " filters."))
   (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Generate_Filters") " subprogram is equivalent to "

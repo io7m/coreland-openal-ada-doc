@@ -12,6 +12,9 @@
 
   (contents)
 
+  (include "a-openal-extension-efx-is_present.ud")
+  (include "a-openal-extension-efx-load_extension.ud")
+
   (include "a-openal-extension-efx-generate_effects.ud")
   (include "a-openal-extension-efx-delete_effects.ud")
   (include "a-openal-extension-efx-effect_is_valid.ud")

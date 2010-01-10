@@ -17,6 +17,13 @@ procedure Delete_Filters
       "The " (item ada_procedure "Delete_Filters") " procedure
       deletes all filters specified by " (item parameter "Filters") "."))
   (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
     (title "Mapping")
     (para
       "The " (item ada_subprogram "Delete_Filters") " subprogram is equivalent

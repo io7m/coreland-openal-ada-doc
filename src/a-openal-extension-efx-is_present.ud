@@ -1,0 +1,24 @@
+(section
+  (ref "openal_extension_efx_is_present")
+  (title "OpenAL.Extension.EFX.Is_Present")
+  (para function_desc "Is EFX present?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Extension.EFX;
+
+function Is_Present (Device : in Context.Device_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Is_Present") " function
+      returns " (item constant "True") " if the EFX extension is
+      present/supported in the current context."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Present") " subprogram is equivalent
+      to " (item c_function "alcIsExtensionPresent") " with "
+      (item constant "ALC_EXT_EFX") " passed as the parameter.")))
