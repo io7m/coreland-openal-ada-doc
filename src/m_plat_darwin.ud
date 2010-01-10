@@ -1,0 +1,29 @@
+(subsection
+  (title "Darwin")
+  (para "On OS X, with versions of GNAT <= 4.3, the build will likely fail with
+    the following error:")
+  (para-verbatim example
+"ld: library not found for -lgnalasup
+collect2: ld returned 1 exit status")
+  (para "This is a compiler problem. Essentially, these versions of GNAT ship
+    with a dependency on a nonexistent library which is only linked against
+    when using some of the " (item ada_package "Ada.Numerics") " packages.")
+  (para "The " (item file_name "i-forbla.adb") " file contains the following:")
+  (para-verbatim example
+"package body Interfaces.Fortran.BLAS is
+  pragma Linker_Options (\"-lgnala\");
+  pragma Linker_Options (\"-lgnalasup\");
+  pragma Linker_Options (\"-lm\");
+end Interfaces.Fortran.BLAS;")
+  (para "Given that " (item file_name "libgnalasup") " doesn't appear to
+    be distributed anywhere, the file should read:")
+  (para-verbatim example
+"package body Interfaces.Fortran.BLAS is
+  pragma Linker_Options (\"-lgnala\");
+  pragma Linker_Options (\"-llapack\");
+  pragma Linker_Options (\"-lblas\");
+  pragma Linker_Options (\"-lm\");
+end Interfaces.Fortran.BLAS;")
+  (para "The problem may exist for other platforms (although none have
+    exhibited the problem to date).")
+  (para "This was corrected in newer versions of GNAT."))
