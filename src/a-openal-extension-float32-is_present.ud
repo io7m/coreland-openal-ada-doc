@@ -1,0 +1,24 @@
+(section
+  (ref "openal_extension_float32_is_present")
+  (title "OpenAL.Extension.Float32.Is_Present")
+  (para function_desc "Is Float32 present?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Context;
+with OpenAL.Extension.Float32;
+
+function Is_Present return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Is_Present") " function
+      returns " (item constant "True") " if the Float32 extension is
+      present/supported in the current context."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Present") " subprogram is equivalent
+      to " (item c_function "alIsExtensionPresent") " with "
+      (item constant "ALC_EXT_FLOAT32") " passed as the parameter.")))

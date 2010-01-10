@@ -9,6 +9,7 @@
 
   (include "a-openal-context-close_device.ud")
   (include "a-openal-context-create_context.ud")
+  (include "a-openal-context-set.ud")
   (include "a-openal-context-destroy_context.ud")
   (include "a-openal-context-get_available_capture_devices.ud")
   (include "a-openal-context-get_available_playback_devices.ud")

@@ -1,5 +1,6 @@
 (section
   (ref "openal_context_create_context")
+  (ref "openal_context_create_context_with_attributes")
   (title "OpenAL.Context.Create_Context")
   (para function_desc "Create context for device")
   (subsection
@@ -7,18 +8,30 @@
     (para-verbatim function_synopsis
 "with OpenAL.Context;
 
-type Context_t is private;
+type Context_t            is private;
+type Context_Attributes_t is private;
 
 Invalid_Context : constant Context_t;
 
 function Create_Context (Device : in Device_t) return Context_t;
+
+function Create_Context_With_Attributes
+  (Device     : in Device_t;
+   Attributes : in Context_Attributes_t) return Context_t;
 "))
   (subsection
     (title "Description")
     (para
       "The " (item ada_function "Create_Context") " function
       creates a new context for the device specified by "
-      (item parameter "Device") "."))
+      (item parameter "Device") " using default, implementation-defined
+      attributes.")
+    (para
+      "The " (item ada_function "Create_Context_With_Attributes") " function
+      creates a new context for the device specified by "
+      (item parameter "Device") " with the attributes specified by "
+      (item parameter "Attributes") ". Attributes are actually selected
+      with the various " (item "openal_context_set" "Set") " subprograms."))
   (subsection
     (title "Mapping")
     (para

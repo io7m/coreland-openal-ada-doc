@@ -1,0 +1,41 @@
+(section
+  (ref "openal_extension_float32_set_data")
+  (ref "openal_extension_float32_set_data_mono_float_32")
+  (ref "openal_extension_float32_set_data_stereo_float_32")
+  (ref "openal_extension_float32_data")
+  (title "OpenAL.Extension.Float32.Set_Data")
+  (para procedure_desc "Set buffer sample data.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Buffer;
+with OpenAL.Extension.Float32;
+with OpenAL.Types;
+
+type Sample_Float_32_t is digits 6;
+for Sample_Float_32_t'Size use 32;
+
+type Sample_Array_Float_32_t is
+  array (Buffer.Sample_Size_t range <>) of aliased Sample_Float_32_t;
+
+procedure Set_Data_Mono_Float_32
+  (Buffer    : in OpenAL.Buffer.Buffer_t;
+   Data      : in Sample_Array_Float_32_t;
+   Frequency : in Types.Frequency_t);
+
+procedure Set_Data_Stereo_Float_32
+  (Buffer    : in OpenAL.Buffer.Buffer_t;
+   Data      : in Sample_Array_Float_32_t;
+   Frequency : in Types.Frequency_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Data") " procedures specify
+      sample data for the buffer specified by " (item parameter "Buffer")
+      "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Data") " subprograms are
+      equivalent to " (item c_function "alBufferData") ".")))

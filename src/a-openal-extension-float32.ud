@@ -1,0 +1,13 @@
+(section
+  (ref "openal_extension_float32")
+  (title "OpenAL.Extension.Float32")
+
+  (para "The " (item ada_package "OpenAL.Extension.Float32") " package provides
+    the " (item constant "AL_EXT_FLOAT32") " extension, which allows the use of
+    32-bit floating point audio formats.")
+
+  (contents)
+
+  (include "a-openal-extension-float32-is_present.ud")
+  (include "a-openal-extension-float32-set_data.ud")
+)

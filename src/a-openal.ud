@@ -16,6 +16,7 @@
   (include "a-openal-error.ud")
   (include "a-openal-extension.ud")
   (include "a-openal-extension-efx.ud")
+  (include "a-openal-extension-float32.ud")
   (include "a-openal-global.ud")
   (include "a-openal-listener.ud")
   (include "a-openal-thin.ud")
