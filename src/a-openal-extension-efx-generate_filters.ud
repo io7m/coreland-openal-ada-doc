@@ -1,0 +1,27 @@
+(section
+  (ref "openal_extension_efx_generate_filters")
+  (title "OpenAL.Extension.EFX.Generate_Filters")
+  (para procedure_desc "Generate filter(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Filter_t is private;
+type Filter_Array_t is array (Positive range <>) of Filter_t;
+
+procedure Generate_Filters
+  (Extension : in     Extension_t;
+   Filters   : in out Filter_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Generate_Filters") " procedure
+      generates " (item parameter "Filters") "'" (item ada_attribute "Length")
+      " filters."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Generate_Filters") " subprogram is equivalent to "
+      (item c_function "alGenFilters") ".")))

@@ -1,0 +1,24 @@
+(section
+  (ref "openal_extension_efx_auxiliary_effect_slot_is_valid")
+  (title "OpenAL.Extension.EFX.Auxiliary_Effect_Slot_Is_Valid")
+  (para function_desc "Is valid auxiliary effect slot?")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Extension.EFX;
+
+function Auxiliary_Effect_Slot_Is_Valid
+  (Extension : in Extension_t;
+   Slot      : in Auxiliary_Effect_Slot_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Auxiliary_Effect_Slot_Is_Valid") " function returns "
+      (item constant "True") " if the auxiliary effect slot specified by "
+      (item parameter "Slot") " is valid."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Valid") " function is
+      equivalent to " (item c_function "alIsAuxiliaryEffectSlot") ".")))

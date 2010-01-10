@@ -1,0 +1,23 @@
+(section
+  (ref "openal_extension_efx_delete_effects")
+  (title "OpenAL.Extension.EFX.Delete_Effects")
+  (para procedure_desc "Delete effect(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+procedure Delete_Effects
+  (Extension : in Extension_t;
+   Effects   : in Effect_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Delete_Effects") " procedure
+      deletes all effects specified by " (item parameter "Effects") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Delete_Effects") " subprogram is equivalent
+      to " (item c_function "alDeleteEffects") ".")))

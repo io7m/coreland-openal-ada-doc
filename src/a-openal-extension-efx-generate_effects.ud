@@ -1,0 +1,27 @@
+(section
+  (ref "openal_extension_efx_generate_effects")
+  (title "OpenAL.Extension.EFX.Generate_Effects")
+  (para procedure_desc "Generate effect(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Effect_t is private;
+type Effect_Array_t is array (Positive range <>) of Effect_t;
+
+procedure Generate_Effects
+  (Extension : in     Extension_t;
+   Effects   : in out Effect_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Generate_Effects") " procedure
+      generates " (item parameter "Effects") "'" (item ada_attribute "Length")
+      " effects."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Generate_Effects") " subprogram is equivalent to "
+      (item c_function "alGenEffects") ".")))

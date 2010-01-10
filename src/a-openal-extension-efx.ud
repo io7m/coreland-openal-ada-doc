@@ -12,4 +12,15 @@
 
   (contents)
 
+  (include "a-openal-extension-efx-generate_effects.ud")
+  (include "a-openal-extension-efx-delete_effects.ud")
+  (include "a-openal-extension-efx-effect_is_valid.ud")
+
+  (include "a-openal-extension-efx-generate_filters.ud")
+  (include "a-openal-extension-efx-delete_filters.ud")
+  (include "a-openal-extension-efx-filter_is_valid.ud")
+
+  (include "a-openal-extension-efx-generate_auxiliary_effect_slots.ud")
+  (include "a-openal-extension-efx-delete_auxiliary_effect_slots.ud")
+  (include "a-openal-extension-efx-auxiliary_effect_slot_is_valid.ud")
 )
