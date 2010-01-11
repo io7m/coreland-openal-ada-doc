@@ -14,6 +14,12 @@ info()
 }
 
 #
+# Copy 'supported'
+#
+
+cp "${OPENAL_SRC}/SUPPORTED" "meta/supported" || fatal "could not copy ${OPENAL_SRC}/SUPPORTED"
+
+#
 # Make procedure map
 #
 
