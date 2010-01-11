@@ -21,7 +21,8 @@ procedure Delete_Effects
     (para
       "If " (item parameter "Extension") " does not constitute a "
       (link "openal_extension_efx_load_extension" "valid reference") " to
-      the extension, the subprogram immediately raises "
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
       (item ada_exception "Program_Error") "."))
   (subsection
     (title "Mapping")

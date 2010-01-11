@@ -18,9 +18,14 @@ function Load_Extension return Extension_t;
       (item ada_function "Load_Extension") " function loads the
       extension if it is present and returns a reference to the
       extension that must be passed to all other subprograms in
-      the package."))
+      the package.")
+    (para "The loaded extension is context-specific."))
   (subsection
     (title "Exceptions")
     (para "If any part of the extension cannot be loaded, the function
       raises " (item ada_exception "OpenAL.Load.Load_Error") " with
+      an appropriate error message.")
+    (para "If there is no " (link "openal_context_get_current_context"
+      "current context") " the subprogram
+      raises " (item ada_exception "Program_Error") " with
       an appropriate error message.")))
