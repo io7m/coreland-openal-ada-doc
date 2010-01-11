@@ -1,20 +1,22 @@
 (section
   (ref "openal_context_close_device")
   (title "OpenAL.Context.Close_Device")
-  (para function_desc "Close audio device")
+  (para procedure_desc "Close audio device")
   (subsection
     (title "Synopsis")
-    (para-verbatim function_synopsis
+    (para-verbatim procedure_synopsis
 "with OpenAL.Context;
 
-function Close_Device
-  (Device : in Device_t) return Boolean;
+procedure Close_Device (Device : in out Device_t);
 "))
   (subsection
     (title "Description")
     (para
-      "The " (item ada_function "Close_Device") " function closes
-      the audio device specified by " (item parameter "Device") "."))
+      "The " (item ada_procedure "Close_Device") " procedure closes
+      the audio device specified by " (item parameter "Device") ".")
+    (para
+      "The procedure will set " (item parameter "Device") " to "
+      (item constant "OpenAL.Context.Invalid_Device") "."))
   (subsection
     (title "Mapping")
     (para
