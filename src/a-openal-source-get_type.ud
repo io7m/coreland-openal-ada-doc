@@ -7,7 +7,7 @@
     (para-verbatim procedure_synopsis
 "with OpenAL.Source;
 
-type Source_Type_t is (Undetermined, Static, Streaming);
+type Source_Type_t is (Undetermined, Static, Streaming, Unknown);
 
 procedure Get_Type
   (Source      : in     Source_t;
