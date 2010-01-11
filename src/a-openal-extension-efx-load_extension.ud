@@ -19,7 +19,10 @@ function Load_Extension return Extension_t;
       extension if it is present and returns a reference to the
       extension that must be passed to all other subprograms in
       the package.")
-    (para "The loaded extension is context-specific."))
+    (para "The loaded extension is context-specific - attempting
+      to use the resulting extension reference in a different
+      context is erroneous (will raise " (item ada_exception "Program_Error")
+      "."))
   (subsection
     (title "Exceptions")
     (para "If any part of the extension cannot be loaded, the function
