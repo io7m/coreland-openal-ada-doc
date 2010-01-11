@@ -22,7 +22,7 @@ function Load_Extension return Extension_t;
     (para "The loaded extension is context-specific - attempting
       to use the resulting extension reference in a different
       context is erroneous (will raise " (item ada_exception "Program_Error")
-      "."))
+      ")."))
   (subsection
     (title "Exceptions")
     (para "If any part of the extension cannot be loaded, the function
