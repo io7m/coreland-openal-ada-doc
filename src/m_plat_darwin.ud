@@ -1,0 +1,13 @@
+(subsection
+  (title "Darwin")
+  (para "On OS X 10.4 (and possibly greater), the following (invalid) sequence
+    of calls will cause Apple's " (item package "OpenAL") " to crash with
+    various 'double-free' errors and eventually a NULL pointer dereference:")
+  (para-verbatim example
+"alcMakeContextCurrent (C);
+alcMakeContextCurrent (NULL);
+alcCloseDevice (D);")
+  (para "Where " (item variable "D") " and " (item variable "C") " refer to
+    a non-NULL device and context, respectively.")
+  (para "This error is deliberately triggered by unit test "
+    (item file_name "init_002") "."))
