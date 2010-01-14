@@ -1,0 +1,36 @@
+(section
+  (ref "openal_extension_efx_set_air_absorption_factor")
+  (title "OpenAL.Extension.EFX.Set_Air_Absorption_Factor")
+  (para procedure_desc "Set air absorption for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Air_Absorption_Factor_t is new Types.Float_t range 0.0 .. 10.0;
+
+procedure Set_Air_Absorption_Factor
+  (Extension : in Extension_t;
+   Source    : in OpenAL.Source.Source_t;
+   Factor    : in Air_Absorption_Factor_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Air_Absorption_Factor") " procedure
+      sets the air absorption factor for the source specified by "
+      (item parameter "Source") " to " (item parameter "Factor") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Air_Absorption_Factor") " subprogram is equivalent to "
+      (item c_function "alSourcei") " with "
+      (item constant "AL_AIR_ABSORPTION_FACTOR") " as the parameter.")))

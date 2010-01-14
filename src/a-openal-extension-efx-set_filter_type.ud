@@ -1,0 +1,43 @@
+(section
+  (ref "openal_extension_efx_set_filter_type")
+  (title "OpenAL.Extension.EFX.Set_Filter_Type")
+  (para procedure_desc "Set filter type.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Filter_Type_t is
+  (Unknown_Filter,
+   Null_Filter,
+   Low_Pass_Filter,
+   Band_Pass_Filter,
+   High_Pass_Filter);
+
+subtype Valid_Filter_Type_t is Filter_Type_t range Low_Pass_Filter .. Filter_Type_t'Last;
+
+procedure Set_Filter_Type
+  (Extension   : in Extension_t;
+   Filter      : in Filter_t;
+   Filter_Type : in Valid_Filter_Type_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Filter_Type") " procedure sets the
+      type of the filter specified by " (item parameter "Filter") " to "
+      (item parameter "Filter_Type") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Filter_Type") " subprogram is equivalent to "
+      (item c_function "alFilteri") " with "
+      (item constant "AL_FILTER_TYPE") " as the parameter.")))

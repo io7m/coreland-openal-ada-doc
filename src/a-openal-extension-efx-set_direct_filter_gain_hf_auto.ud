@@ -1,0 +1,36 @@
+(section
+  (ref "openal_extension_efx_set_direct_filter_gain_hf_auto")
+  (title "OpenAL.Extension.EFX.Set_Direct_Filter_Gain_HF_Auto")
+  (para procedure_desc "Set direct (orientation) filtering for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+procedure Set_Direct_Filter_Gain_HF_Auto
+  (Extension : in Extension_t;
+   Source    : in OpenAL.Source.Source_t;
+   Enable    : in Boolean);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Auxiliary_Effect_Slot_Is_Valid") " procedure
+      enables or disables direct-path filtering according to the orientation
+      of the source specified by " (item parameter "Source") " relative to the
+      listener and the value set by "
+      (link "openal_extension_efx_set_cone_outer_gain_hf" "Set_Cone_Outer_Gain_HF") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Direct_Filter_Gain_HF_Auto") " procedure
+      is equivalent to " (item c_function "alSourcef") " with "
+      (item constant "AL_DIRECT_FILTER_GAINHF_AUTO") ".")))

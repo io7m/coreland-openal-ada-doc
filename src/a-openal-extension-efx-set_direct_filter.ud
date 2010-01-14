@@ -1,0 +1,34 @@
+(section
+  (ref "openal_extension_efx_set_direct_filter")
+  (title "OpenAL.Extension.EFX.Set_Direct_Filter")
+  (para procedure_desc "Attach filter directly to source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+procedure Set_Direct_Filter
+  (Extension : in Extension_t;
+   Source    : in OpenAL.Source.Source_t;
+   Filter    : in Filter_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Direct_Filter") " procedure attaches
+      the filter specified by " (item parameter "Filter") " directly to the
+      output of the source specified by " (item parameter "Source") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Direct_Filter") " subprogram is equivalent to "
+      (item c_function "alSourcei") " with "
+      (item constant "AL_DIRECT_FILTER") " as the parameter.")))

@@ -1,0 +1,53 @@
+(section
+  (ref "openal_extension_efx_set_effect_type")
+  (title "OpenAL.Extension.EFX.Set_Effect_Type")
+  (para procedure_desc "Set effect type.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Effect_Type_t is
+  (Unknown_Effect,
+   Null_Effect,
+   Reverb,
+   Chorus,
+   Distortion,
+   Echo,
+   Flanger,
+   Frequency_Shifter,
+   Vocal_Morpher,
+   Pitch_Shifter,
+   Ring_Modulator,
+   Autowah,
+   Compressor,
+   Equalizer,
+   EAX_Reverb);
+
+subtype Valid_Effect_Type_t is Effect_Type_t range Reverb .. Effect_Type_t'Last;
+
+procedure Set_Effect_Type
+  (Extension   : in Extension_t;
+   Effect      : in Effect_t;
+   Effect_Type : in Valid_Effect_Type_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Effect_Type") " procedure sets the
+      type of the effect specified by " (item parameter "Effect") " to "
+      (item parameter "Effect_Type") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Effect_Type") " subprogram is equivalent to "
+      (item c_function "alEffecti") " with "
+      (item constant "AL_EFFECT_TYPE") " as the parameter.")))

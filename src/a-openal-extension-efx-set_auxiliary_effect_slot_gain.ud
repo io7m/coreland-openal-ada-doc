@@ -1,0 +1,37 @@
+(section
+  (ref "openal_extension_efx_set_auxiliary_effect_slot_gain")
+  (title "OpenAL.Extension.EFX.Set_Auxiliary_Gain_Slot_Gain")
+  (para procedure_desc "Set gain for auxiliary send slot.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+subtype Gain_t is Types.Float_t range 0.0 .. 1.0;
+
+procedure Set_Auxiliary_Effect_Slot_Gain
+  (Extension : in Extension_t;
+   Slot      : in Auxiliary_Effect_Slot_t;
+   Gain      : in Gain_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Auxiliary_Send_Filter") " procedure
+      sets the gain of the auxiliary effect slot specified by "
+      (item parameter "Slot") " to " (item parameter "Gain") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Auxiliary_Gain_Slot_Gain")
+      " subprogram is equivalent to "
+      (item c_function "alAuxiliaryEffectSlotf") " with "
+      (item constant "AL_EFFECTSLOT_GAIN") " as the parameter.")))

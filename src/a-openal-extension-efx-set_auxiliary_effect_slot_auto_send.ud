@@ -1,0 +1,36 @@
+(section
+  (ref "openal_extension_efx_set_auxiliary_effect_slot_auto_send")
+  (title "OpenAL.Extension.EFX.Set_Auxiliary_Effect_Slot_Auto_Send")
+  (para procedure_desc "Enable/disable automatic send adjustments for sources.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+procedure Set_Auxiliary_Effect_Slot_Auto_Send
+  (Extension : in Extension_t;
+   Slot      : in Auxiliary_Effect_Slot_t;
+   Enable    : in Boolean);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Auxiliary_Send_Filter") " procedure
+      enables or disables automatic send adjustments based on the physical
+      positions of sources and the listener."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Auxiliary_Effect_Slot_Auto_Send")
+      " subprogram is equivalent to "
+      (item c_function "alAuxiliaryEffectSloti") " with "
+      (item constant "AL_EFFECTSLOT_AUXILIARY_SEND_AUTO")
+      " as the parameter.")))

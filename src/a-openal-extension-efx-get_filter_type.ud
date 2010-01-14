@@ -1,0 +1,32 @@
+(section
+  (ref "openal_extension_efx_get_filter_type")
+  (title "OpenAL.Extension.EFX.Get_Filter_Type")
+  (para procedure_desc "Get filter type.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+function Get_Filter_Type
+  (Extension   : in Extension_t;
+   Filter      : in Filter_t) return Filter_Type_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Get_Filter_Type") " function retrieves
+      the type of the filter specified by " (item parameter "Filter") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Filter_Type") " subprogram is equivalent to "
+      (item c_function "alGetFilteri") " with "
+      (item constant "AL_FILTER_TYPE") " as the parameter.")))

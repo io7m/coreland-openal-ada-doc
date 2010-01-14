@@ -1,0 +1,37 @@
+(section
+  (ref "openal_extension_efx_set_cone_outer_gain_hf")
+  (title "OpenAL.Extension.EFX.Set_Cone_Outer_Gain_HF")
+  (para procedure_desc "Set direction HF attenuation for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Cone_Outer_Gain_HF_Factor_t is new Types.Float_t range 0.0 .. 10.0;
+
+procedure Set_Cone_Outer_Gain_HF
+  (Extension : in Extension_t;
+   Source    : in OpenAL.Source.Source_t;
+   Factor    : in Cone_Outer_Gain_HF_Factor_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Cone_Outer_Gain_HF") " procedure
+      sets the directional high frequency attenuation factor for the source
+      specified by " (item parameter "Source") " to " (item parameter "Factor")
+      "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Cone_Outer_Gain_HF") " subprogram is equivalent to "
+      (item c_function "alSourcef") " with "
+      (item constant "AL_CONE_OUTER_GAINHF") " as the parameter.")))

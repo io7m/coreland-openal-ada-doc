@@ -1,0 +1,31 @@
+(section
+  (ref "openal_extension_efx_get_maximum_auxiliary_sends")
+  (title "OpenAL.Extension.EFX.Get_Maximum_Auxiliary_Sends")
+  (para function_desc "Retrieve minor version of EFX extension.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenAL.Extension.EFX;
+
+function Get_Maximum_Auxiliary_Sends
+  (Extension : in Extension_t) return Source_Auxiliary_Send_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Maximum_Auxiliary_Sends") " function
+      retrieves the maximum available auxiliary sends."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Maximum_Auxiliary_Sends") " subprogram is equivalent to "
+      (item c_function "alcGetIntegerv") " with "
+      (item constant "ALC_MAX_AUXILIARY_SENDS") " as the parameter.")))

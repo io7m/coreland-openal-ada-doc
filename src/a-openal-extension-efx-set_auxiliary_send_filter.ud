@@ -1,0 +1,39 @@
+(section
+  (ref "openal_extension_efx_set_auxiliary_send_filter")
+  (title "OpenAL.Extension.EFX.Set_Auxiliary_Send_Filter")
+  (para procedure_desc "Connect source to auxiliary effect slot.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+procedure Set_Auxiliary_Send_Filter
+  (Extension   : in Extension_t;
+   Source      : in OpenAL.Source.Source_t;
+   Slot        : in Auxiliary_Effect_Slot_t;
+   Source_Send : in Source_Auxiliary_Send_t := 0;
+   Filter      : in Filter_t                := No_Filter);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Auxiliary_Send_Filter") " procedure
+      connects the auxiliary send " (item parameter "Source_Send") " of the
+      source specified by " (item parameter "Source") " to
+      the auxiliary effect slot specified by " (item parameter "Slot") ",
+      optionally filtering the source signal with the filter specified by "
+      (item parameter "Filter") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Auxiliary_Send_Filter") " subprogram is equivalent to "
+      (item c_function "alSourcei") " with "
+      (item constant "AL_AUXILIARY_SEND_FILTER") " as the parameter.")))

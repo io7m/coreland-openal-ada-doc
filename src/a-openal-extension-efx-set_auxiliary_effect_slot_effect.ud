@@ -1,0 +1,35 @@
+(section
+  (ref "openal_extension_efx_set_auxiliary_effect_slot_effect")
+  (title "OpenAL.Extension.EFX.Set_Auxiliary_Effect_Slot_Effect")
+  (para procedure_desc "Set effect for auxiliary send slot.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+procedure Set_Auxiliary_Effect_Slot_Effect
+  (Extension : in Extension_t;
+   Slot      : in Auxiliary_Effect_Slot_t;
+   Effect    : in Effect_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Auxiliary_Send_Filter") " procedure
+      sets the auxiliary effect slot specified by " (item parameter "Slot")
+      " to the effect specified by " (item parameter "Effect") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Auxiliary_Effect_Slot_Effect")
+      " subprogram is equivalent to "
+      (item c_function "alAuxiliaryEffectSloti") " with "
+      (item constant "AL_EFFECTSLOT_EFFECT") " as the parameter.")))

@@ -1,0 +1,36 @@
+(section
+  (ref "openal_extension_efx_set_room_rolloff_factor")
+  (title "OpenAL.Extension.EFX.Set_Room_Rolloff_Factor")
+  (para procedure_desc "Set room rolloff factor for source.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenAL.Extension.EFX;
+
+type Room_Rolloff_Factor_t is new Types.Float_t range 0.0 .. 10.0;
+
+procedure Set_Room_Rolloff_Factor
+  (Extension : in Extension_t;
+   Source    : in OpenAL.Source.Source_t;
+   Factor    : in Room_Rolloff_Factor_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Set_Room_Rolloff_Factor") " procedure
+      sets the room rolloff factor for the source specified by "
+      (item parameter "Source") " to " (item parameter "Factor") "."))
+  (subsection
+    (title "Exceptions")
+    (para
+      "If " (item parameter "Extension") " does not constitute a "
+      (link "openal_extension_efx_load_extension" "valid reference") " to
+      the extension or the current context is not the same one that was
+      used when loading the extension, the subprogram immediately raises "
+      (item ada_exception "Program_Error") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Set_Room_Rolloff_Factor") " subprogram is equivalent to "
+      (item c_function "alSourcei") " with "
+      (item constant "AL_ROOM_ROLLOFF_FACTOR") " as the parameter.")))
