@@ -1,7 +1,7 @@
 (section
   (ref "openal_extension_efx_set_auxiliary_send_filter_gain_hf_auto")
   (title "OpenAL.Extension.EFX.Set_Auxiliary_Send_Filter_Gain_HF_Auto")
-  (para procedure_desc "Set high frequency attenuationm for source.")
+  (para procedure_desc "Set high frequency attenuation for source.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
