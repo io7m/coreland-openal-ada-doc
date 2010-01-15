@@ -31,7 +31,7 @@ function Create_Context_With_Attributes
       creates a new context for the device specified by "
       (item parameter "Device") " with the attributes specified by "
       (item parameter "Attributes") ". Attributes are actually selected
-      with the various " (item "openal_context_set" "Set") " subprograms."))
+      with the various " (link "openal_context_set" "Set") " subprograms."))
   (subsection
     (title "Mapping")
     (para
