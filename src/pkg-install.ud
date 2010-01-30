@@ -163,6 +163,23 @@ make install-check")
 "make deinstall"))
 
   (subsection
+    (title "Cleaning up")
+
+    (para "All object files created during the compilation process can be
+      deleted with the following command:")
+    (para-verbatim example
+"make clean")
+    (para "The distribution can be completely reset to \"distribution clean\"
+      state with the following command")
+    (para-verbatim example
+"make clean-all")
+    (para "The " (item command "clean-all") " target is necessary when, as
+      an example, the build configuration process fails due to a missing
+      external dependency. After the missing dependency is installed, the
+      compilation process will still believe it is missing until the build
+      state is reset with " (item command "clean-all") "."))
+
+  (subsection
     (title "Fake root")
     (para "The package can be installed into a \"fake root\" directory
       suitable for operating system package building. Essentially, all
